@@ -49,11 +49,11 @@
   margin-bottom: 5px;
 }
 .background img{
-width: 430px; 
+	width: 430px; 
     height: 220px;
 }
 .background {
-width: 430px; 
+	width: 430px; 
     height: 220px;
     background-color: black;
 }
@@ -63,7 +63,6 @@ white-space: nowrap;
 }
 .layout-text a:hover {
 font-weight: bold;
-
 }
 .layout-color .layout-text{
   text-align: left;
@@ -87,7 +86,7 @@ font-weight: bold;
   width: 430px;
 }
 
-.block-left-banner {
+.block-right-banner {
   animation: bounceInDown 2s ease-in-out  1s;
 }
 .block-content {

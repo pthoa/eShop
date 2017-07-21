@@ -59,96 +59,97 @@
 }
  /*===========================right-top.php========================*/
 .block-content{
-    color: white;
-    padding-left: 50px;
-    padding-top: 60px;
-    padding-right: 40px;
-  } 
-  .block-left-banner {
-    background-color: #3494FF; 
-    height: 340px; 
-    width: 313px; 
-    float: right;
-    margin-right: 30px;
-  }
-  .block-right-banner {
-    float:left; 
-    margin-left: 15px;
-  }
-    .button-banner:hover {
-        text-decoration: none;
-        cursor: pointer;
-        color: blue;
-        background-color: white;
-    }
-    .button-banner {
-      color: white; 
-      border: 1px white solid; 
-      padding: 10px 15px; 
-      font-size: 15px;
-    }    
-  .block-heading span{
-    font-size: 30px;
-  }
-    .highlight-banner span{
-      color: yellow;
-      font-size: 40px;
-    }
-    .highlight-banner {
-      font-size: 40px;
-      margin-bottom: 3px;
-    }
-    .block-body {
-      font-size: 15px;
-      margin-bottom: 5px;
-    }
-    .background img{ 
-        width: 430px; 
-        height: 220px;
-  }
-  .background {
-    width: 430px; 
-        height: 220px;
-        background-color: black;
-  }
-    .layout-text a p, .layout-text a h2{
-      color: white;
-      white-space: nowrap;
-    }
-    .layout-text a:hover {
-      font-weight: bold;
+  color: white;
+  padding-left: 50px;
+  padding-top: 60px;
+  padding-right: 40px;
+} 
+.block-right-banner {
+  background-color: #3494FF; 
+  height: 340px; 
+  width: 313px; 
+  float: right;
+  margin-right: 30px;
+}
+.block-left-banner img{
+  width: 570px; 
+  height: 340px; 
+}
+.block-left-banner {
+  float:left; 
+  margin-left: 15px;
+}
+.button-banner:hover {
+  text-decoration: none;
+  cursor: pointer;
+  color: blue;
+  background-color: white;
+}
+.button-banner {
+  color: white; 
+  border: 1px white solid; 
+  padding: 10px 15px; 
+  font-size: 15px;
+}    
+.block-heading span{
+  font-size: 30px;
+}
+.highlight-banner span{
+  color: yellow;
+  font-size: 40px;
+}
+.highlight-banner {
+  font-size: 40px;
+  margin-bottom: 3px;
+}
+.block-body {
+  font-size: 15px;
+  margin-bottom: 5px;
+}
+.background img{
+	width: 430px; 
+    height: 220px;
+}
+.background {
+	width: 430px; 
+    height: 220px;
+    background-color: black;
+}
+.layout-text a p, .layout-text a h2{
+color: white;
+white-space: nowrap;
+}
+.layout-text a:hover {
+font-weight: bold;
+}
+.layout-color .layout-text{
+  text-align: left;
+  position: absolute; 
+  top: 14%;
+  left: 5%;
+  color: white;
+  font-size: 12px;
+} 
+.background .layout-color{
+  position: absolute;
+  background: black;
+  opacity: 0;
+  height: 0;
+  transition: .5s ease;     
+}
+.background:hover .layout-color{
+  opacity: 0.7;
+  height: 65px;
+  top: 70%;
+  width: 430px;
+}
 
-    }
-    .layout-color .layout-text{
-      text-align: left;
-      position: absolute; 
-      top: 14%;
-      left: 5%;
-      color: white;
-      font-size: 12px;
-    } 
-    .background .layout-color{
-      position: absolute;
-      
-      background: black;
-      opacity: 0;
-      
-      height: 0;
-      transition: .5s ease;     
-    }
-    .background:hover .layout-color{
-    opacity: 0.7;
-    height: 65px;
-    top: 70%;
-    width: 430px;
-    }
-
-  .block-left-banner {
-    animation: bounceInDown 2s ease-in-out  1s;
-  }
-  .block-content {
-      animation: bounceInRight 2s ease-in-out  1s 2 alternate;
-  }
+.block-right-banner {
+  animation: bounceInDown 2s ease-in-out  1s;
+}
+.block-content {
+  animation: bounceInRight 2s ease-in-out  1s 2 alternate;
+}
 /*============bottom.php============*/
 .block-product {
         width: 270px;
