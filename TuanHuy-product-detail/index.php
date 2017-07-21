@@ -21,9 +21,9 @@
     <body data-container="body" class="cms-home cms-index-index page-layout-1column" aria-busy="false">
         <div class="page-wrapper">
             <?php
-                include('modules/header.php');
+              
 				include('modules/product_detail.php');
-                include('modules/footer.php');
+                
             ?>
         </div>
     </body>
