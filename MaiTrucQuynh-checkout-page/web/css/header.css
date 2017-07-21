@@ -1,0 +1,124 @@
+.top-header {
+    background-color: #fff
+}
+.top-menu {
+    font-size: 0;
+    margin: 0
+}
+.top-menu li {
+    border-left: 1px solid #e8e8e8;
+    display: inline-block;
+    font-size: 14px;
+    padding: 10px 13px
+}
+.top-menu li:first-child {
+    border: 0
+}
+.top-menu a {
+    color: #666;
+    font-size: 12px
+}
+.top-menu a:hover {
+    color: #fe9c00
+}
+.top-info {
+    float: right;
+    margin: 0
+}
+.top-info>li {
+    border-left: 1px solid #e8e8e8;
+    float: left;
+    padding: 10px 13px;
+    position: relative
+}
+.top-info>li>a {
+    font-size: 12px;
+    color: #666
+}
+.top-info>li:hover>a {
+    color: #fe9c00
+}
+.top-info.top-info9>li:hover>a {
+    color: #3ebb51
+}
+.top-info>li:first-child {
+    border: medium none
+}
+.sub-menu-top {
+    background: #fafafa none repeat scroll 0 0;
+    border: 10px solid #fff;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, .2);
+    position: absolute;
+    right: 0;
+    top: 100%;
+    width: 170px;
+    z-index: 99;
+    -webkit-transition: all .3s ease-out 0s;
+    transition: all .3s ease-out 0s;
+    opacity: 0;
+    visibility: hidden;
+    margin-top: 30px;
+    text-align: left;
+    margin: 0;
+    padding: 0
+}
+.top-info .has-child:hover .sub-menu-top {
+    margin-top: 2px;
+    opacity: 1;
+    visibility: visible
+}
+.language-selected img {
+    margin-right: 5px
+}
+.sub-menu-top .label {
+    display: none
+}
+.sub-menu-top .switcher-options>div,
+.sub-menu-top li {
+    border-bottom: 1px solid #fff;
+    padding: 5px 10px;
+    -webkit-transition: all .3s ease-out 0s;
+    transition: all .3s ease-out 0s;
+    cursor: pointer
+}
+.sub-menu-top .switcher-options>div:hover,
+.sub-menu-top li:hover {
+    background: #fe9c00
+}
+.sub-menu-top .switcher-options label:hover,
+.sub-menu-top .switcher-options>div:hover a,
+.sub-menu-top li:hover a {
+    color: #fff
+}
+.sub-menu-top li:last-child {
+    border: 0
+}
+.top-language .sub-menu-top img {
+    margin-right: 10px
+}
+.top-currency .sub-menu-top {
+    width: 110px
+}
+.top-language .sub-menu-top {
+    width: 130px
+}
+.sub-menu-top a {
+    color: #666;
+    -webkit-transition: all .3s ease-out 0s;
+    transition: all .3s ease-out 0s
+}
+.top-currency .sub-menu-top span {
+    margin: 0 16px 0 6px
+}
+.sub-menu-top a i {
+    display: inline-block;
+    width: 22px
+}
+.sub-menu-top a:hover {
+    color: #e62e04
+}
+.has-child>a::after {
+    content: "\f107";
+    font-family: fontawesome;
+    margin-left: 5px
+}
