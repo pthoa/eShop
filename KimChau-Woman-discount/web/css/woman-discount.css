@@ -1,0 +1,129 @@
+.kc{
+		margin-top: 100px;
+	}
+#left{
+	background-color: #f2f2f2;
+  float: left;
+  height: 240px;
+  width: 250px;
+  margin-top: 100px;
+  border-top: 3px solid blue;
+
+}
+
+h5{
+  font-size: 14px;
+  margin-left: 25px;
+  text-align: center;
+}
+.list a{
+  font-size: 14px;
+  color: black;
+}
+.list a:visited{
+  color: blue;
+}
+
+.sec-product .sp{
+        padding-right: 40px;
+        padding-bottom: 5px;
+        margin-top: 2px;  
+    } 
+.sec-product1 {
+    padding-top: 50px;
+    border-bottom: none;
+    padding-bottom: 30px;
+} 
+.sec-product .sp .bd{
+        border-right: 1px solid ;
+        border-bottom: 1px solid;
+        border-color: #cccccc;
+        padding-top: 40px;
+        padding-bottom: 20px;    
+    }
+#circle {
+        width: 15px;
+        height: 15px;
+        background: white;
+        -moz-border-radius: 7.5px;
+        -webkit-border-radius: 7.5px;
+        --border-radius: 7.5px;
+        border-radius: 7.5px;
+        position: absolute;
+        margin-left:273px;
+        margin-top: 10px;
+    }
+#circle1{
+        width: 15px;
+        height: 15px;
+        background:white;
+        -moz-border-radius: 7.5px;
+        -webkit-border-radius: 7.5px;
+        --border-radius: 7.5px;
+        border-radius: 7.5px;
+        position: absolute;
+        margin-top: 10px;
+        margin-left:-23px;
+    }
+.sec-product .sp .bd1{
+        border-bottom: 1px solid;
+        border-color: #cccccc;
+        padding-top: 40px;
+        padding-bottom: 20px;
+        
+    }
+.sec-product .sp .bd2{
+        border-right:  1px solid;
+        border-color: #cccccc;
+        padding-top: 40px;
+        padding-bottom: 20px;
+        border-bottom-color: 
+    }
+.sec-product .up{
+        margin-bottom: 20px;
+    }
+==========================
+.container1 {
+    position: relative;
+    width: 100%;
+}
+
+.images{
+  opacity: 1;
+  display: block;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%)
+}
+
+.container1:hover .images {
+  opacity: 0.3;
+}
+
+.container1:hover .middle {
+  opacity: 1;
+}
+
+.text1 {
+	background-color: blue;
+	color: white;
+	font-size: 12px;
+	padding: 10px 10px;
+}
+.text2{
+	margin-top: 10px;
+	background-color: white;
+  	color: blue;
+  	font-size: 12px;
+  	padding: 10px 8px;
+  	border: 1px solid blue;
+}
