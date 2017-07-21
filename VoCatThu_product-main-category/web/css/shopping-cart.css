@@ -1,0 +1,48 @@
+.sec-tram{
+      border-bottom: 1px solid #dedfe4;
+      padding-top: 10px;
+      padding-bottom: 1px;
+}
+.sec-tramkc{
+  padding-bottom: 20px;
+  padding-top:  20px;
+}
+.sec-tram-align-left{
+  text-align:left;
+}
+.sec-tram-align-right{
+  text-align:right;
+}
+.sec-tram-align-center{
+  text-align:center;
+}
+.sec-product-background {
+    background-color: #f0f2f4;
+}
+#right-content {
+  margin-left: 10px;
+}
+#left-content {
+  margin-right: 10px;
+}
+.sec-tram-right-content-front-size{
+  font-size: 18px;
+}
+.sec-tram-right-content-front-size20{
+  font-size: 20px;
+}
+.sec-tram-button-background-white{
+  background-color: white;
+  color:#2445a8;
+  border: 1px solid #2445a8;
+}
+.sec-tram-button-background-blue{
+  background-color: #2445a8;
+  color:white;
+  border: 1px solid #2445a8;
+}
+.button-right{
+  position: absolute;
+  right: 0px;
+
+}
