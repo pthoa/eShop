@@ -1,0 +1,220 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700);
+
+/*=============== Style của check_step ===============*/
+.container1{
+    position: relative;
+    padding-top: 50px 
+}
+
+.container1:before{
+    content: '';
+    position: absolute;
+    top :80%;
+    left: 0;
+    margin-top: -20px;
+    height: 2px;
+    width: 100%;
+    background-color: #ddd;
+}
+
+ul.check{
+    padding: 0;
+    margin : 0;
+    text-align: center;
+}
+
+ul.check li{
+    display: inline-block;
+    list-style-type: none;
+    position: relative;
+    padding: 0 70px
+}
+
+ul.check li:before{
+    content: '';
+    position: absolute;
+    height: 4px;
+    background-color: #d7d7d7;
+    width: 100%;
+    top : 50%;
+    margin-top: -3px;
+}
+ul.check li:last-child:before{
+    content: none;
+}
+
+ul.check li.step span{
+    display: block;
+    position: relative;
+    font-size: 20px;
+    font-weight: bold;
+    color: #a0a0a0;
+    text-align: center;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    background-color: #d7d7d7;
+    z-index: 1;
+    border-radius: 50%;
+}
+
+ul.check li.step span:before{
+    content: '';
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    top:5px;
+    left: 5px;
+    border : 3px #fff solid;
+    border-radius: 50%;
+}
+
+
+ul.check li.step.active span{
+    display: block;
+    position: relative;
+    font-size: 20px;
+    font-weight: bold;
+    color: #ffc107;
+    text-align: center;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    background-color: #0157ae;
+    z-index: 1;
+    border-radius: 50%;
+}
+
+/*=============== Style của bottom.php ===============*/
+.row .col-md-6 .col-md-6 span{
+    color: #0157ae;
+    font-weight: bold;
+    font-size: 1.2em;
+}  
+
+/*=============== Style của content.php ===============*/
+.wrapper{
+    width: 100%;
+    height: 90%;
+    box-sizing: border-box;
+    margin-left: 30px ;
+    margin-bottom: 30px;
+}
+
+.panel-body, .panel-heading{
+    border: 1px solid #ccc;
+}
+
+.col-md-8 .form-group a{
+    color: #0157ae;
+}
+
+.row label{
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+label.title{
+    font-size : 1.4em;
+    font-weight: normal;
+}
+
+.panel-body{
+    border-top-color: #0157ae;
+    border-top-width: 2px;
+    margin-bottom: 40px; 
+}
+
+.box-footer button, .foot-right button {
+    font-size: 1.1em;
+    background-color: #0157ae;
+    color: #fff;
+}
+
+
+
+/*=============== Style của right.php ===============*/
+
+.wrapper1{
+    width: 70%;
+    height: 90%;
+    box-sizing: border-box;
+    margin-right: 30px ;
+    margin-top: 30px;
+    float: right;
+}
+
+.list-info-price strong{
+    float: right;
+}
+
+.list-info-price strong.price{
+    float: right;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #0157ae;
+
+}
+
+.list-info-price span.price{
+    float: left;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #000;
+
+}
+
+.foot-right button{
+    width: 100%;
+}
+
+.panel-body .box1{
+    padding-bottom :10px; 
+    border-bottom-width: 1px;
+    border-bottom-color: #ddd;
+    border-bottom-style: solid;
+}
+
+div.col-md-6 > span.edit{
+    font-size: 1.2em;
+    font-weight: bold;
+    height: 50px;
+    line-height: 50px;
+}
+
+div.col-md-6 > a.edit1{
+    float: left;
+}
+
+div.col-md-6 > a.rev{
+    float: right;
+}
+
+div.col-md-6 > a{
+    display: inline-block;
+    height: 50px;
+    line-height: 50px;
+}
+
+p.edit > a{
+    float: right;
+}
+
+div.foot-right{
+    clear : both;
+    margin-left : 0px;
+    margin-top : 50px;
+    width: 100%;
+}
+
+div.col-right1 > p.sign-in{
+    text-align: center;
+}
+
+.panel-body.col-right1 {
+    background-color: #f6f7fb;
+    border-bottom-color: #fff;
+    border-left-color : #fff;
+    border-right-color : #fff;
+}
+
