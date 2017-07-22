@@ -18,34 +18,39 @@
 	<link href="web/css/animation.css" rel="stylesheet" type="text/css" />  
 	<link href="web/css/product-main-category.css" rel="stylesheet" type="text/css" /> 
 </head>
-<body>
-<main>	
-    <div class="container">
-		<div class="row">
-		  	<div class="col-md-3">
-				<?php 
-					include('modules/product-main-category/left-category.php');
-				?>
-			</div>
-			<div class="col-md-9">
+<body data-container="body" class="cms-home cms-index-index page-layout-1column" aria-busy="false">
+<div class="page-wrapper">
+	<!-- <?php //include('modules/header.php'); ?> -->
+	<main id="maincontent" class="">
+	    <div class="content-home">	
+		    <div class="container">
 				<div class="row">
-					<?php 
-						include('modules/product-main-category/right-top.php');
-					?>
+				  	<div class="col-md-3">
+						<?php 
+							include('modules/product-main-category/left-category.php');
+						?>
+					</div>
+					<div class="col-md-9">
+						<div class="row">
+							<?php 
+								include('modules/product-main-category/right-top.php');
+							?>
+						</div>
+						<div class="row">
+							<?php 
+								include('modules/product-main-category/right-center.php');
+							?>
+						</div>
+					</div>
 				</div>
 				<div class="row">
 					<?php 
-						include('modules/product-main-category/right-center.php');
+						include('modules/product-main-category/bottom.php');
 					?>
 				</div>
 			</div>
 		</div>
-		<div class="row">
-			<?php 
-				include('modules/product-main-category/bottom.php');
-			?>
-		</div>
-	</div>
-</main>
+	</main>
+</div>
 </body>
 </html>
