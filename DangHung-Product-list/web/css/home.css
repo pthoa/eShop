@@ -9,6 +9,7 @@
 /*--breadcrumb--*/
 #breadcrumb {
 	background-color: #FFF;
+	padding-left: 0px;
 }
 #breadcrumb li{
     font-size: 16px;
@@ -25,6 +26,24 @@
 }
 
 /*-----------------sideMenu-----------------*/
+#btn-collapse {
+	/*display: none;*/
+}
+	@media screen and (min-width: 768px) {
+		#btn-collapse {
+			display: none !important;
+		}
+	}
+	@media screen and (max-width: 767px) {
+		.sec-sideMenu {
+			display: none !important;
+		}
+		#btn-collapse {
+			display: show !important;
+		}
+	}
+
+
 .sec-sideMenu .panel .panel-body ul li {
     margin: 8px;
 }
@@ -44,7 +63,7 @@
 .sec-sideMenu .panel .panel-body .style-disc {
 	padding-left: 0px;
 	list-style: disc; 
-	margin-left: 30px;
+	margin-left: 10px;
 }
 .sec-sideMenu .panel .panel-body .style-disc a {
 	text-decoration: none;
@@ -92,10 +111,16 @@
 }
 
 
+
+
+img {
+	width: 100%;
+	height: auto;
+}
 /*-----------------popular products-----------------*/
 
 .slide-popular-products {
-	height: 300px;
+	height: 310px;
 }
 
 .item img {
@@ -168,13 +193,13 @@
 	height: 34px;
 	width: 150px;
 	text-align: center;
-}
 
+}
 /*-----------------list-products-----------------*/
 
 .view-img img {
-	width: 300px;
-	height: 300px;
+	width: 262px;
+	height: 250px;
 }
 .product-title {
 	padding-top: 15px;
@@ -201,7 +226,7 @@
 .price-label sup {
 	vertical-align: top;
 	position: relative;
-	top: 0.8em;
+	top: 1.2em;
 	font-size: 0.6em;
 
 }
@@ -212,7 +237,7 @@
 .old-price-label sup {
 	vertical-align: top;
 	position: relative;
-	top: 1.6em;
+	top: 1.9em;
 	font-size: 0.6em;
 }
 .product-describe {
@@ -224,4 +249,117 @@
 }
 .product-describe ul li {
 	margin-top: 8px;
+}
+
+/*------------border remove some part of corner-----------------*/
+.bordery-no-top-left {
+  border: 1px solid #DCDCDC !important;
+  padding: 20px;
+  position: relative;
+  border-top: none !important;
+  border-left: none !important;
+}
+.bordery-no-top-left::after,
+.bordery-no-top-left::before {
+  background-color: white;
+  content: "";
+  display: block;
+  height: 5px;
+  position: absolute;
+  width: 5px;
+}
+.bordery-no-top-left::after {
+  bottom: -1px !important;
+  right: -1px !important;
+}
+.bordery-no-top-left::before {
+ bottom: -1px;
+ left: -1px;
+}
+
+
+
+.bordery-bottom {
+  border: 1px solid #DCDCDC !important;
+  padding: 20px;
+  position: relative;
+  border-top: none !important;
+  border-left: none !important;
+  border-right: none !important;
+}
+.bordery-bottom::after,
+.bordery-bottom::before {
+  background-color: white;
+  content: "";
+  display: block;
+  height: 5px;
+  position: absolute;
+  width: 5px;
+}
+.bordery-bottom::after {
+  bottom: -1px;
+  right: -1px;
+}
+.bordery-bottom::before {
+  bottom: -1px;
+  left: -1px;
+}
+
+
+.bordery-right {
+  border: 1px solid #DCDCDC !important;
+  padding: 20px;
+  position: relative;
+  border-top: none !important;
+  border-left: none !important;
+  border-bottom: none !important;
+}
+.bordery-right::after,
+.bordery-right::before {
+  background-color: white;
+  content: "";
+  display: block;
+  height: 5px;
+  position: absolute;
+  width: 5px;
+}
+.bordery-right::after {
+  bottom: -1px;
+  right: -1px;
+}
+.bordery-right::before {
+  top: -1px;
+  right: -1px;
+}
+
+/*------------------animation image ---------------------*/
+
+.style_prevu_kit
+{
+	height: auto;
+    display:inline-block;
+    border:0;
+    position: relative;
+    -webkit-transition: all 200ms ease-in;
+    -webkit-transform: scale(1); 
+    -ms-transition: all 200ms ease-in;
+    -ms-transform: scale(1); 
+    -moz-transition: all 200ms ease-in;
+    -moz-transform: scale(1);
+    transition: all 200ms ease-in;
+    transform: scale(1);   
+
+}
+.style_prevu_kit:hover
+{
+    
+    z-index: 2;
+    -webkit-transition: all 200ms ease-in;
+    -webkit-transform: scale(1.1);
+    -ms-transition: all 200ms ease-in;
+    -ms-transform: scale(1.1);   
+    -moz-transition: all 200ms ease-in;
+    -moz-transform: scale(1.1);
+    transition: all 200ms ease-in;
+    transform: scale(1.1);
 }
