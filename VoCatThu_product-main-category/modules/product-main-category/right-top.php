@@ -48,21 +48,13 @@
   font-size: 15px;
   margin-bottom: 5px;
 }
-.background img{
-	width: 430px; 
-    height: 220px;
-}
-.background {
-	width: 430px; 
-    height: 220px;
-    background-color: black;
-}
+
 .layout-text a p, .layout-text a h2{
-color: white;
-white-space: nowrap;
+  color: white;
+  white-space: nowrap;
 }
 .layout-text a:hover {
-font-weight: bold;
+  font-weight: bold;
 }
 .layout-color .layout-text{
   text-align: left;
@@ -72,9 +64,18 @@ font-weight: bold;
   color: white;
   font-size: 12px;
 } 
+.background img{
+  height: 220px;
+  width: 420px;
+}
+.background {
+  height: 220px;
+  width: 420px;
+  
+}
 .background .layout-color{
   position: absolute;
-  background: black;
+  background-color: black;
   opacity: 0;
   height: 0;
   transition: .5s ease;     
@@ -83,7 +84,7 @@ font-weight: bold;
   opacity: 0.7;
   height: 65px;
   top: 70%;
-  width: 430px;
+  width: 420px;
 }
 
 .block-right-banner {
@@ -91,6 +92,7 @@ font-weight: bold;
 }
 .block-content {
   animation: bounceInRight 2s ease-in-out  1s 2 alternate;
+}
 }*/
 </style>
 <style type="text/css">
