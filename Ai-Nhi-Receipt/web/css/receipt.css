@@ -1,0 +1,88 @@
+.content-receipt {
+    padding-top: 42px;
+    padding-bottom: 40px;
+}
+.rec-product {
+    border-top: 2px #0157ae solid;
+    border-bottom: 1px #dedfe4 solid;
+    border-right: 1px #dedfe4 solid;
+    border-left: 1px #dedfe4 solid;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.rec-product .tab-right {
+    padding-right: 20px;
+}
+.rec-product .tab-right-new {
+    padding-top: 25px;
+    padding-right: 20px;
+}
+.total {
+    border-top: 2px #0157ae solid;
+    border-bottom: 1px #dedfe4 solid;
+    border-right: 1px #dedfe4 solid;
+    border-left: 1px #dedfe4 solid;
+    margin-right: 10px;
+}
+.cost{
+    color: #000;
+    font-size: 20px;
+    font-weight: bold;
+}
+.rec-product .table-my {
+    border-top: 2px #0157ae solid;
+    border-bottom: 1px #dedfe4 solid;
+    border-right: 1px #dedfe4 solid;
+    border-left: 1px #dedfe4 solid;
+}
+.rec-product .blue{
+    color: #0157ae;
+    size: 15px;
+}
+h4.title {
+    color: #0157ae;
+    font-size: 16px;
+    font-weight: bold;
+}
+h2.title {
+    margin-bottom: 20p;
+}
+.rec-product .text-r{
+    line-height: 30px;
+    text-align: right;
+}
+.rec-product .text-l{
+    line-height: 40px;
+}
+.view-icon {
+    min-height: 80px;
+    text-align: right;
+    line-height: 80px;
+}
+.but{
+    background: none;
+    color: #0000FF;
+    border-color: #0000FF;
+}
+.but:hover{
+    background: none;
+    color: #0000FF;
+    border-color: #0000FF;
+}
+.but:active {
+    background: none;
+    color: #0000FF;
+    border-color: #0000FF;
+}
+a:link, a:visited {
+    color: #0157ae;
+    text-decoration: none;
+    cursor: auto;
+}
+a:link:active, a:visited:active {
+    color: #0157ae;
+}
+
+

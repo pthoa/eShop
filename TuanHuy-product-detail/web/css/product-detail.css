@@ -1,0 +1,139 @@
+	 .breadcrumb > li + li:before {
+				content: "\3E" 
+			}
+			 .breadcrumb{				
+				font-size: 15px !important;
+			}
+			#title_samsung{
+				font-size: 30px ;
+			}
+			#title_review{
+				font-size: 14px;
+				
+			}
+			#id_money{
+				font-size: 25px;
+			}
+			#id_money_blue{
+				font-size: 20px;
+				color: blue;
+			}			
+			#id_old_money{
+				font-size: 15px;
+				text-decoration: line-through;
+			}
+			#id_save{
+				font-size: 20px;
+			}
+			#id_review{
+				font-size: 16px;
+				 font-weight: bold;
+			}			
+			#green_text{
+				color: green;
+				font-size: 15px;
+			}
+			#blue_text{
+				color: blue;
+				font-size: 15px;
+			}			
+			.button1 {font-size: 5px;
+				background-color: #4CAF50;
+				}
+			.button2 {font-size: 5px;
+			background-color: #ff0000;}
+			.table-bordered th, .table-bordered td { border: 1px solid #ddd!important }
+			
+			.col-xs-5ths,
+			.col-sm-5ths,
+			.col-md-5ths,
+			.col-lg-5ths {
+				position: relative;
+				min-height: 1px;
+				padding-right: 15px;
+				padding-left: 15px;
+			}
+
+			.col-xs-5ths {
+				width: 20%;
+				float: left;
+			}
+	.block-product .button-add {
+        background-color: blue;
+        color: white;
+        font-size: 12px;
+        padding: 5px 18px;
+        margin-bottom: 5px;
+        height: 30px;
+        font-weight: bold;
+    }
+    .block-product .button-view{
+        background-color: white;
+        color: blue;
+        font-size: 12px;
+        padding: 5px 18px;
+        border: 1px solid blue;
+        height: 30px;
+        font-weight: bold;
+        
+    }
+    .block-product:hover .layout-button{
+        opacity: 1;
+    }
+    .block-product:hover .view-img {
+        opacity: 0.3;
+    }
+    .block-product .layout-button {
+        opacity: 0;
+        position: absolute;
+        top: 25%;
+        left: 30%;
+    }
+    .block-product .view-img{
+        opacity: 1;        
+    }
+    .a-blue-color {
+    	color:blue;
+    }
+	.color-star{
+		color:#ffff00;
+	}
+	.margin-right-bottom-zero{
+		margin-right:0px;margin-bottom:0px;padding:0px;
+	}
+	.margin-right-zero{
+		margin-right:0px;
+	}
+	.margin-right-20{
+		margin-right:20px;
+	}
+	.margin-left-zero{
+		margin-left:0px;
+	}	
+	.margin-left-20{
+		margin-left:20px;
+	}	
+	sup { vertical-align: top; font-size: 0.6em;top: 1.0em; }
+
+			
+
+			@media (min-width: 768px) {
+				.col-sm-5ths {
+				width: 20%;
+				float: left;
+				}
+			}	
+
+			@media (min-width: 992px) {
+				.col-md-5ths {
+				width: 20%;
+				float: left;
+				}
+			}
+
+			@media (min-width: 1200px) {
+				.col-lg-5ths {
+				width: 20%;
+				float: left;
+				}
+			}
