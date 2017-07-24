@@ -82,7 +82,15 @@ h5{
 .sec-product .up{
         margin-bottom: 20px;
     }
-==========================
+
+
+
+
+/*product */
+
+.sec-product .title1 {
+    padding-bottom: 80px;
+}
 .container1 {
     position: relative;
     width: 100%;
@@ -120,10 +128,41 @@ h5{
 	padding: 10px 10px;
 }
 .text2{
-	margin-top: 10px;
-	background-color: white;
-  	color: blue;
-  	font-size: 12px;
-  	padding: 10px 8px;
-  	border: 1px solid blue;
+  margin-top: 10px;
+  background-color: white;
+  color: blue;
+  font-size: 12px;
+  padding: 8px 8px;
+  border: 1px solid blue;
+}
+
+/*animation*/
+    .style_prevu_kit
+{
+    display:inline-block;
+    position: relative;
+    margin-left: 30px;
+    margin-bottom: 20px;
+    -webkit-transition: all 200ms ease-in;
+    -webkit-transform: scale(1); 
+    -ms-transition: all 200ms ease-in;
+    -ms-transform: scale(1); 
+    -moz-transition: all 200ms ease-in;
+    -moz-transform: scale(1);
+    transition: all 200ms ease-in;
+    transform: scale(1);   
+
+}
+.style_prevu_kit:hover
+{
+    box-shadow: 0px 0px 10px #000000;
+    z-index: 2;
+    -webkit-transition: all 200ms ease-in;
+    -webkit-transform: scale(1.2);
+    -ms-transition: all 200ms ease-in;
+    -ms-transform: scale(1.2);   
+    -moz-transition: all 200ms ease-in;
+    -moz-transform: scale(1.2);
+    transition: all 200ms ease-in;
+    transform: scale(1.2);
 }

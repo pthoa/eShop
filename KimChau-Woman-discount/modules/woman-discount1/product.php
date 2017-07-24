@@ -1,5 +1,5 @@
 <section class="sec-product">
-<h2 class="title">Recent Viewed Items</h2>
+<h2 class="title title1">Recent Viewed Items</h2>
 	<div class="row">
 	 	<div class="col-md-2 col-md-offset-1">
 			<div class="view-ing container1">
@@ -8,7 +8,7 @@
     				<div class="text1">Add to Cart</div>
     				<div class="text2">View Details</div>
   				</div>
-
+  				
 			</div>
 			<div class="text">Fineshow Women Casual Round<br />Stainless Steel Band Analog
 			</div>
@@ -21,7 +21,7 @@
     				<div class="text1">Add to Cart</div>
     				<div class="text2">View Details</div>
   				</div>
-
+  				
 			</div>
 			<div class="text">Fineshow Women Casual Round<br />Stainless Steel Band Analog
 			</div>
@@ -34,7 +34,7 @@
     				<div class="text1">Add to Cart</div>
     				<div class="text2">View Details</div>
   				</div>
-
+  				
 			</div>
 			<div class="text">Fineshow Women Casual Round<br />Stainless Steel Band Analog
 			</div>
@@ -47,7 +47,7 @@
     				<div class="text1">Add to Cart</div>
     				<div class="text2">View Details</div>
   				</div>
-
+  				
 			</div>
 			<div class="text">Fineshow Women Casual Round<br />Stainless Steel Band Analog
 			</div>
@@ -60,7 +60,7 @@
     				<div class="text1">Add to Cart</div>
     				<div class="text2">View Details</div>
   				</div>
-
+  				
 			</div>
 			<div class="text">Fineshow Women Casual Round<br />Stainless Steel Band Analog
 			</div>
@@ -68,4 +68,3 @@
 	</div>
 </div>
 </section>
-
