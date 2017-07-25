@@ -1,4 +1,5 @@
-			<div class="row" style="margin-top:50px;">
+		
+			<div class="row mobile-hide" style="margin-top:50px;">
 				
 				<div class="col-md-12">
 					<div class="col-md-12">

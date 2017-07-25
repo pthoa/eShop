@@ -10,7 +10,7 @@
 							<div class="col-md-5 col-lg-5" style="width:200px; height:200px; margin: 0px;">
 								<img src="web/images/samsung_crop_1.png" height="180" width="180">
 							</div>
-							<div class="col-md-1 col-lg-1 col-sm-1" style="margin-left:0px;margin-right:0px;margin-top:70px;width:10px;padding:0px">													
+							<div class="col-md-1 col-lg-1 col-sm-1 mobile-hide" style="margin-left:0px;margin-right:0px;margin-top:70px;width:10px;padding:0px">													
 								<span class="glyphicon glyphicon-plus"></span>
 							</div>	
 							<div class="col-md-5 col-lg-5 col-sm-5" style="width:200px; height:200px; margin: 0px;">
