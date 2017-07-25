@@ -30,16 +30,33 @@
 	/*display: none;*/
 }
 	@media screen and (min-width: 768px) {
+		.sec-sideMenu {
+			padding: 0px !important;
+		}
 		#btn-collapse {
 			display: none !important;
+		}
+		#display-grid {
+			display: none;
 		}
 	}
 	@media screen and (max-width: 767px) {
 		.sec-sideMenu {
-			display: none !important;
+			padding: 0px !important;
 		}
+
 		#btn-collapse {
 			display: show !important;
+		}
+
+		.sort_result {
+			display: none !important;
+		}
+		#display-grid {
+			display: show !important;
+		}
+		#display-list {
+			display: none !important;
 		}
 	}
 
@@ -154,7 +171,6 @@ img {
 .sort_result {
 	 
 	margin-top: 30px; 
-	margin-bottom: 25px; 
 	border-top: 1px solid #DBDBDB; 
 	border-bottom: 1px solid #DBDBDB; 
 	padding: 10px 0px;
@@ -187,18 +203,24 @@ img {
 	color: #0157AE;
 }
 #sorter {
-	margin-left: 10px;  
+	margin-left: 5px;  
 	float: right;
 	line-height: 34px;
 	height: 34px;
-	width: 150px;
+	width: 130px;
 	text-align: center;
 
 }
 /*-----------------list-products-----------------*/
 
+#display-grid {
+	margin-top: 25px;
+}
+#display-list {
+	margin-top: 25px;
+}
 .view-img img {
-	width: 262px;
+	width: 242px;
 	height: 250px;
 }
 .product-title {
@@ -251,7 +273,7 @@ img {
 	margin-top: 8px;
 }
 
-/*------------border remove some part of corner-----------------*/
+/*------------border remove some part of corner-----------------3 ITEM IN ROW----------*/
 .bordery-no-top-left {
   border: 1px solid #DCDCDC !important;
   padding: 20px;

@@ -7,8 +7,8 @@
 
   <link href="web/css/font/font-awesome.css" rel="stylesheet" type="text/css" />
   <link href="web/bootstrap/css/bootstrap.css" rel="stylesheet" type="text/css" />
-  <link href="web/bootstrap/css/bootstrap-theme.css" rel="stylesheet" type="text/css" />
-  <link href="web/bootstrap/css/bootstrap-theme.css" rel="stylesheet" type="text/css" />
+  <!-- <link href="web/bootstrap/css/bootstrap-theme.css" rel="stylesheet" type="text/css" />
+  <link href="web/bootstrap/css/bootstrap-theme.css" rel="stylesheet" type="text/css" /> -->
   <link href="web/css/home.css" rel="stylesheet" type="text/css" />
   <script src="web/js/jquery-3.2.1.min.js" type="text/javascript"></script>
   <script src="web/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>

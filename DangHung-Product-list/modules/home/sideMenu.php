@@ -1,5 +1,5 @@
 
-<div class="sec-sideMenu">
+<div id="my-collapse" class=" navbar-collapse collapse sec-sideMenu">
 	<div class="panel panel-default">
 	    
 	    <div class="panel-body ">

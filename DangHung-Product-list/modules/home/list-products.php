@@ -1,6 +1,6 @@
 <section class="sec-list-products">
 
-	<div id="display-grid" style="display: none;">
+	<div id="display-grid" >
 		<div class="row">
 			<div class="col-md-4 col-sm-6 col-xs-12 bordery-no-top-left">
 				<a href="">
