@@ -1,0 +1,115 @@
+.page-header {
+    padding: 0;
+    margin: 0;
+}
+.page-header .switcher {
+    float: left;
+}
+.page-header .header.panel {
+    margin-bottom: 0;
+    background: #f5f6fa;
+}
+.page-header .panel.wrapper {
+    color: #333;
+    margin-bottom: 0;
+}
+
+.header.panel > .header.links > li > a,.header.panel > .header.links > li > a:visited {
+    color: #333;
+}
+.support {
+    float: left;
+}
+.page-header {
+    .flag {
+        background: url('../images/flags/en.png') no-repeat left center;
+        padding-left: 24px;
+        &.l-en {
+            background: url('../images/flags/en.png') no-repeat left center;
+        }
+        &.l-fr {
+            background: url('../images/flags/fr.png') no-repeat left center;
+        }
+        &.l-vn {
+            background: url('../images/flags/vn.png') no-repeat left center;
+        }
+    }
+}
+.page-header .switcher .options ul.dropdown a {
+    &.flag {
+        background: url('../images/flags/en.png') no-repeat left center;
+        padding-left: 24px;
+        margin-left: 10px;
+        &.l-en {
+            background: url('../images/flags/en.png') no-repeat left center;
+        }
+        &.l-fr {
+            background: url('../images/flags/fr.png') no-repeat left center;
+        }
+        &.l-vn {
+            background: url('../images/flags/vn.png') no-repeat left center;
+        }
+    }
+}
+
+.minicart-wrapper {
+    margin: 0 !important;
+    padding: 10px 0 0;
+    position: relative;
+}
+.minicart-wrapper .action.showcart .counter.qty.empty {
+    display: block;
+}
+.minicart-wrapper .action.showcart .counter.qty {
+    border-radius: 50%;
+    height: 21px;
+    line-height: 20px;
+    padding: 0;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    top: -10px;
+    width: 21px;
+    z-index: 2;
+    min-width: auto;
+    font-size: 13px;
+    color: #fff;
+    background-color: #858383;
+    display: inline-block;
+    z-index: 10;
+}
+.minicart-text {
+    display: inline-block;
+    text-align: right;
+    vertical-align: middle;
+    margin: 0 5px 0 0;
+    float: left;
+}
+.minicart-wrapper .action.showcart .text.cart-title{
+    display: block;
+    position: static;
+    font-size: 14px;
+    line-height: normal;
+    font-weight: normal;
+    margin: 0;
+    vertical-align: middle;
+    color: #1f1f1f;
+    width: auto;
+    height: auto;
+    overflow: visible;
+}
+
+.minicart-text .price {
+    font-size: 17px;
+    color: #262626;
+    font-weight: bold;
+}
+@media (min-width: 768px){
+    .page-header .switcher {
+        float: left;
+    }
+    .page-header .panel.wrapper {
+        border-bottom: 1px solid #e8e8e8;
+        background-color: #f5f6fa;
+    }
+}
