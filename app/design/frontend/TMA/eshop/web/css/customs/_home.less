@@ -1,0 +1,266 @@
+
+.content-home {
+    padding-top: 42px;
+    padding-bottom: 40px;
+}
+.sec-product {
+    padding-top: 50px;
+    border-bottom: 1px #dedfe4 solid;
+    padding-bottom: 30px;
+}
+.sec-product .cost{
+    color: #0157ae;
+    font-size: 20px;
+    font-weight: bold;
+}
+.sec-product .cost-sale {
+    font-size: 15px;
+    text-decoration: line-through;
+}
+.view-img {
+    min-height: 180px;
+    text-align: center;
+}
+.sec-product .item{
+    background-color: #f9f9f9;
+    padding: 20px 0;
+}
+.sec-product .item .view-img {
+    border-bottom: 1px #dedfe4 solid;
+}
+.sec-product .item .text {
+    padding: 20px 20px 0 ;
+}
+.sec-product .item .cost {
+    padding: 0 20px;
+}
+.sec-product .item .cost-sale {
+    padding: 0 20px;
+}
+.sec-product.newstyle .view-img {
+    min-height: 264px;
+}
+.sec-banner-center {
+    padding-top: 30px;
+}
+h2.title {
+    font-size: 23px;
+    font-weight: bold;
+    padding-bottom: 20px;
+}
+h4.title {
+    font-size: 16px;
+    font-weight: bold;
+}
+.label-sale {
+    position: absolute;
+    right: 10px;
+    bottom: 0;
+    background-color: #ffc107;
+    width: 42px;
+    height: 42px;
+    text-align: center;
+    border-radius: 50%;
+    font-weight: bold;
+    color: #000;
+}
+.sec-adv article {
+    padding-top: 31px;
+}
+.vmagicmenu:hover {
+
+}
+.flex-direction-nav a {
+    margin: -30px 8% 0 !important;
+}
+
+.flex-control-nav {
+  bottom: 40px !important;
+}
+.page-layout-1column .daily-deal .block.widget .products-grid .product-item {
+
+  width: 33.33%;
+  min-height: 408px;
+  max-height: 408px;
+  .product-item-name {
+    height: 40px;
+  }
+  .product-item-info {
+    .product-item-actions {
+      left: 30px;
+      top: calc(133px);
+    }
+
+  }
+  &.prime-deal {
+    width: 66.66%;
+    .product-item-details {
+      width: 50%;
+      float: left;
+      margin-top: 16px;
+    }
+    .product-image-container {
+      width: 50% !important;
+      float: left;
+      height: 408px;
+      .product-image-wrapper {
+        height:  100%;
+        img {
+          height: 100%;
+        }
+
+      }
+
+    }
+     .product-item-info {
+       .product-item-actions {
+         left: 45px;
+       }
+
+     }
+  }
+
+
+}
+.page-layout-1column .block.widget .products-grid .product-item {
+  width: 100%;
+  float: left;
+  margin: 0;
+  padding: 0;
+
+  &:hover {
+    .product-image-photo {
+      opacity: 0.25;
+    }
+    .product-item-actions {
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+}
+.block.widget .product-item-info {
+  padding: 8px;
+  .price {
+    color: #0157ae;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  .old-price {
+    .price {
+      font-size: 15px;
+      text-decoration: line-through;
+      width: 100%;
+      display: block;
+      color: #333;
+      font-weight: normal;
+    }
+  }
+  .product-item-actions {
+    z-index: 999;
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    top: calc(100px);
+    .actions-primary {
+      text-align: center;
+      button {
+        margin: auto;
+        width: 60%;
+        border: 1px solid #1e56ac;
+        margin-bottom: 5px;
+        background: #fff;
+        span {
+          color:#1e56ac;
+        }
+        &:hover{
+          background-color: #1e56ac;
+            span {
+            color:#fff;
+            }
+        }
+        &:not(.primary) {
+            box-shadow: none;
+        }
+      }
+    }
+  }
+}
+
+.products-grid .product-item-info:hover, .products-grid .product-item-info.active {
+  box-shadow: none;
+  border: none;
+  margin: 0;
+  background: inherit;
+}
+.woman-discount {
+  float: left;
+}
+
+.categories-grid  {
+  list-style-type: none;
+
+}
+.category-item {
+  display: inline-block;
+  width: 30%;
+  float: left;
+  .category-item-info {
+    padding: 15px;
+    .category-item-details {
+      text-align: center;
+    }
+  }
+}
+.category-item-name
+{
+  font-size: 20px;
+  a {
+    color: #585858;
+    font-weight: normal;
+    text-decoration: none;
+  }
+
+}
+.woman-discount, .trending,  .daily-deal, .affordable-contractors, .best-selling {
+  width: 100%;
+  position: relative;
+  float: left;
+  .see-more {
+    position: absolute;
+    top: 28px;
+    right: 0;
+    right: 0;
+    width: 70px;
+    /* height: 20px; */
+    text-align: center;
+    padding: 7px 0;
+    border: 1px solid;
+    color: #4170b9;
+    a {
+      text-decoration: none;
+    }
+  }
+}
+.fa-chevron-left:before {
+  content: url('../../en_US/images/left-arrow.PNG')  !important;
+}
+.fa-chevron-right:before {
+  content: url('../../en_US/images/right-arrow.PNG')  !important;
+}
+.owl-prev {
+  left: 0;
+  top: 25%;
+  position: absolute;
+}
+.owl-next {
+  position: absolute;
+  right: 0;
+  top: 25%;
+}
+
+.page-header {
+      border-bottom: 2px solid #3769b5;
+}
+.nav-sections {
+  margin-bottom: 0;
+}

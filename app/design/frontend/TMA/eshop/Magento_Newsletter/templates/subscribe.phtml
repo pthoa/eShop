@@ -1,0 +1,21 @@
+<div class="col-sm-8 block-newletter">
+                <div class="block newsletter block-subscribe">
+                    <form class="form subscribe clearfix" novalidate="novalidate" action="<?php /* @escapeNotVerified */ echo $block->getFormActionUrl() ?>" method="post" id="newsletter-validate-detail">
+                        <div class="block-content">
+                            <div class="col-sm-6 block-title"><?php echo $block->getLayout()->createBlock('Magento\Cms\Block\Block')->setBlockId('newsletter_promo')->toHtml();?></div>
+                            <div class="col-sm-4 field newsletter input-box">
+                                <div class="visible">
+                                    <div class="control">
+                                        <input name="email" type="email" id="newsletter" class="input-text" placeholder="<?php /* @escapeNotVerified */ echo __('Enter your email address') ?>" data-validate="{required:true, 'validate-email':true}">
+                                    </div>
+                                    <div class="actions">
+                                        <button class="action subscribe button" title="Subscribe" type="submit">
+                                        <img src="<?php echo $this->getViewFileUrl('images/arrow.PNG')?>" alt="">
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>

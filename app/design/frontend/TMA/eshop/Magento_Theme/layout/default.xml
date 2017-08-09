@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © 2016 Magento. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+-->
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <move element="top.links" destination="header-wrapper" after="-" />
+        <referenceBlock name="page.main.title" remove="true"/>
+        <!--header-->
+        <referenceContainer name="header.panel">
+            <block class="Magento\Framework\View\Element\Template" name="support.block" before="-"  template="Magento_Theme::support.phtml"></block>
+            <block class="Magento\Framework\View\Element\Html\Links" name="header.links" template="Magento_Theme::link.phtml" />
+            <block class="Magento\Directory\Block\Currency" name="currency" after="store_language" template="currency.phtml"/>
+        </referenceContainer>
+        <!--header-->
+      <!--   <referenceContainer name="header-wrapper">
+            <block class="Magento\Framework\View\Element\Template" name="navigation.sections" after="-" template="Magento_Theme::topmenu.phtml" />
+        </referenceContainer> -->
+        <!--logo-->
+        <referenceBlock name="logo">
+            <arguments>
+                <argument name="logo_img_width" xsi:type="number">148</argument>
+                <argument name="logo_img_height" xsi:type="number">43</argument>
+            </arguments>
+        </referenceBlock>
+        <!--footer-->
+        <referenceContainer name="footer">
+            <referenceBlock name="footer_links" remove="true" />
+            <container name="row.footer.top" htmlTag="div" htmlClass="block-footer-top">
+              <container htmlTag="div" htmlClass="container">
+                <container htmlTag="div" htmlClass="row">
+                    <block class="Magento\Newsletter\Block\Subscribe" name="form.subscribe" as="subscribe" before="-" template="subscribe.phtml"/>
+                    <block class="Magento\Framework\View\Element\Template" name="social.footer" after="-"  template="Magento_Theme::social-footer.phtml"></block>
+                </container>
+              </container>
+            </container>
+            <container name="row.footer.bottom" htmlTag="div" htmlClass="block-footer-bottom">
+              <container htmlTag="div" htmlClass="container">
+                <container htmlTag="div" htmlClass="row">
+                    <block class="Magento\Framework\View\Element\Template" name="footer.bottom.contain" after="-"  template="Magento_Theme::footer-bottom.phtml"></block>
+                </container>
+              </container>
+            </container>
+            <container name="row.footer.company" htmlTag="div" htmlClass="footer-links-company">
+
+            </container>
+        </referenceContainer>
+        <referenceBlock name="report.bugs" remove="true"/>
+        <move element="copyright" destination="row.footer.company"/>
+    </body>
+</page>
