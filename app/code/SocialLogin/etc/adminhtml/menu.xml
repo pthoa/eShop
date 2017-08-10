@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+   <menu>
+       <add id="TMA_SocialLogin::sociallogin" title="Social Login" module="TMA_SocialLogin" sortOrder="100" resource="TMA_SocialLogin::configuration"/>
+
+       <add id="TMA_SocialLogin::configuration" title="Configuration" module="TMA_SocialLogin" sortOrder="20" resource="TMA_SocialLogin::configuration" parent="TMA_SocialLogin::sociallogin" action="adminhtml/system_config/edit/section/sociallogin"/>
+   </menu>
+</config>
