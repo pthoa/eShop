@@ -2,6 +2,6 @@
 
 \Magento\Framework\Component\ComponentRegistrar::register(
     \Magento\Framework\Component\ComponentRegistrar::MODULE,
-    'TMA_ScocialLogin',
+    'TMA_SocialLogin',
     __DIR__
 );

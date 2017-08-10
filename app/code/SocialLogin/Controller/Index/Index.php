@@ -1,6 +1,6 @@
 <?php
 
-namespace TMA\ScocialLogin\Controller\Index;
+namespace TMA\SocialLogin\Controller\Index;
 
 use \Magento\Framework\App\Action\Action;
 use \Magento\Framework\View\Result\PageFactory;
