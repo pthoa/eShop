@@ -25,6 +25,7 @@
 li.level2 {
   margin-bottom: 0;
   line-height: 20px;
+  pointer-events: all;
 }
 .magicmenu .nav-desktop .level0.logo.display {
     display: none;
@@ -63,7 +64,7 @@ li.level2 {
     color: #888888;
 }
 .magicmenu .nav-desktop .level0 .level-top {
-    padding: 15px;
+  padding: 6px;
     font-size: 14px;
     font-weight: 500;
     position: relative;
@@ -71,7 +72,19 @@ li.level2 {
     outline: medium none;
     display: block;
     text-align: center;
+    margin-top: 10px;
     line-height: normal;
+    color: #525252;
+    border-left: 1px solid #e1e1e2;
+
+}
+.magicmenu .nav-desktop .level0  {
+  &:last-child, &:first-child {
+    .level-top {
+      border-left: none;
+    }
+  }
+
 }
 .magicmenu .nav-desktop .level0.ext.last .level-top {
     padding-right: 0;
@@ -208,12 +221,7 @@ li.level2 {
     opacity: 0;
     visibility: hidden;
     border-width: 1px 1px 1px 0;
-    border-style: solid;
-    box-shadow: 0 0 7px rgba(0, 0, 0, 0.1);
-    -moz-box-shadow: 0 0 7px rgba(0, 0, 0, 0.1);
-    -webkit-box-shadow: 0 0 7px rgba(0, 0, 0, 0.1);
-    -o-box-shadow: 0 0 7px rgba(0, 0, 0, 0.1);
-    -ms-box-shadow: 0 0 7px rgba(0, 0, 0, 0.1);
+
     padding: 12px 0px;
     min-width: 13em;
     z-index: 1;
@@ -346,7 +354,9 @@ li.level2 {
 }
 
 .content-mega-horizontal  {
-    min-height: 552px;
+    min-height: 375px;
+    width: 841px !important;
+    float: left;
 }
 .magicmenu .nav-desktop .level0 .level-top-mega .mage-column.cat-mega {
     float: left;
@@ -383,8 +393,8 @@ li.level2 {
     margin-top: 59px;
 }
 .mage-column img {
-    max-width: 100%;
-    min-height: 552px;
+    width: 100%;
+    min-height: 383px;
     object-fit: cover;
 }
 .mega-block-right h3 {
@@ -694,12 +704,6 @@ li.level2 {
 .vmagicmenu .level0 .level-top-mega,
 .vmagicmenu .vmagicmenu-narrow .level0.dropdown > .level0 {
     border-width: 1px 1px 1px 0;
-    border-style: solid;
-    box-shadow: 0 0 7px rgba(0, 0, 0, 0.1);
-    -moz-box-shadow: 0 0 7px rgba(0, 0, 0, 0.1);
-    -webkit-box-shadow: 0 0 7px rgba(0, 0, 0, 0.1);
-    -o-box-shadow: 0 0 7px rgba(0, 0, 0, 0.1);
-    -ms-box-shadow: 0 0 7px rgba(0, 0, 0, 0.1);
     position: absolute;
     top: 0px !important;
     left: 100%;
@@ -730,13 +734,13 @@ li.level2 {
     text-align: left;
     text-decoration: none;
     position: relative;
-    display: block;
+    display: inline-block;
 }
 .vmagicmenu .level0 .level-top-mega .children a span {
     font-size: 13px;
 }
 .vmagicmenu .level0 .level-top-mega .children > a {
-    display: block;
+    display: inline-block;
     margin: 28px 0 5px;
     position: relative;
     font-weight: bold;
@@ -818,10 +822,13 @@ li.level2 {
     width: 50%;
     text-align: left;
 }
-.vmagicmenu .level0 .level-top-mega .mage-column .children ul {
+.vmagicmenu .level0 .level-top-mega .mage-column .children  {
+  margin-bottom: 0px;
+  ul{
     list-style: outside none none;
-    margin-bottom: 10px;
+    margin-bottom: 0;
     margin-left: -40px;
+  }
 }
 .cms-index-index .vmagicmenu .block-vmagicmenu-content {
     opacity: 1;
@@ -891,18 +898,18 @@ li.level0.cat.hasChild {
   &:hover {
     background-color: #0157ae;
     &::before {
-      right: -30px;
-      /* top: 1px; */
-      border: solid transparent;
-      content: " ";
-      width: 0;
-      position: absolute;
-      pointer-events: none;
-      border-color: rgba(194, 225, 245, 0);
-      border-left-color: #0157ae;
-      border-width: 15px;
-      margin-top: 0px;
-      z-index: 99999;
+      right: -36px;
+    border: solid transparent;
+    content: " ";
+    /* width: 17px; */
+    position: absolute;
+    /* height: 58px; */
+    pointer-events: none;
+    border-color: rgba(194,225,245,0);
+    border-left-color: #0157ae;
+    border-width: 18px;
+    margin-top: -1px;
+    z-index: 99999;
 
     }
     a {

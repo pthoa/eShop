@@ -1,14 +1,9 @@
 <ul class="header links">
 <?php 
-//$welcomeMessage = $block->getWelcome();
 $objectManager = \Magento\Framework\App\ObjectManager::getInstance();
+$customerSession = $objectManager->get('Magento\Customer\Model\Session');
 
-$context = $objectManager->get('Magento\Framework\App\Http\Context');
-/** @var bool $isLoggedIn */
-$isLoggedIn = $context->getValue(\Magento\Customer\Model\Context::CONTEXT_AUTH);
-//print_r($welcomeMessage);
-    if($isLoggedIn){// Logged In
-	$customerSession = $objectManager->create('Magento\Customer\Model\Session');
+    if($customerSession->isLoggedIn()){// Logged In
 ?>
 	<li class="authorization-link" data-label="|">
         <a href="<?php echo $this->getUrl('customer/account'); ?>"><?php echo __("Hi "). $customerSession->getCustomer()->getName();?></a>

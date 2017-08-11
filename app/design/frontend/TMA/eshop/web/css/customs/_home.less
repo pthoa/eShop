@@ -78,12 +78,35 @@ h4.title {
   bottom: 40px !important;
 }
 .page-layout-1column .daily-deal .block.widget .products-grid .product-item {
+  &.prime-deal{
+      .product-item-name {
+        height: 80px;
+        a {
+          font-size: 20px;
+        }
+      }
+      .special-price {
+        .price {
+          font-size: 24px;
+        }
+      }
+      .old-price{
+        .price {
+              font-size : 17px;
+        }
 
+      }
+  }
+ .product-image-container {
+   height: 245px;
+    overflow: hidden;
+ }
   width: 33.33%;
   min-height: 408px;
   max-height: 408px;
   .product-item-name {
     height: 40px;
+    overflow: hidden;
   }
   .product-item-info {
     .product-item-actions {
@@ -138,8 +161,16 @@ h4.title {
     }
   }
 }
-.block.widget .product-item-info {
-  padding: 8px;
+
+.daily-deal .product-items .product-item-info .old-price .price {
+  display: inline-block !important;
+  color: #565656;
+  padding-left: 22px;
+  font-size: 14px;
+  width: auto !important;
+}
+.product-item-info {
+
   .price {
     color: #0157ae;
     font-size: 20px;
@@ -147,7 +178,7 @@ h4.title {
   }
   .old-price {
     .price {
-      font-size: 15px;
+      font-size: 14px;
       text-decoration: line-through;
       width: 100%;
       display: block;
@@ -202,12 +233,13 @@ h4.title {
 }
 .category-item {
   display: inline-block;
-  width: 30%;
+  width: 100%;
   float: left;
   .category-item-info {
     padding: 15px;
     .category-item-details {
       text-align: center;
+      margin-top: 20px;
     }
   }
 }
@@ -221,13 +253,21 @@ h4.title {
   }
 
 }
-.woman-discount, .trending,  .daily-deal, .affordable-contractors, .best-selling {
+.woman-discount, .trending, .daily-deal, .best-selling{
+  border-bottom: 1px solid #eaebee ;
+  padding-bottom: 35px;
+}
+.affordable-contractors, .bottom-advertising {
+  padding-top: 25px;
+}
+.woman-discount, .trending,  .daily-deal, .affordable-contractors, .best-selling, .bottom-advertising {
   width: 100%;
   position: relative;
   float: left;
+
   .see-more {
     position: absolute;
-    top: 28px;
+    top: 20px;
     right: 0;
     right: 0;
     width: 70px;
@@ -263,4 +303,160 @@ h4.title {
 }
 .nav-sections {
   margin-bottom: 0;
+}
+  .products-grid .product-item.prime-deal .product-label-image span {
+        font-size: 1em;
+  }
+.prime-deal {
+  .products-grid .product-item .product-label-image span {
+        font-size: 0.9em;
+  }
+  .spg-product-label-container {
+    &.lb-bottom-right {
+      margin-top: 125px;
+      .product-label-image {
+        width: 50px !important;
+        height: 50px !important;
+        padding-top: 8px;
+      }
+    }
+}
+}
+.spg-product-label-container {
+  &.lb-bottom-right {
+    position: absolute;
+    right: 47px;
+    margin-top: 55px;
+    .product-label-image {
+      width: 40px !important;
+      height: 40px !important;
+      text-align: center;
+      padding-top: 2px;
+    }
+  }
+}
+
+.category-image {
+  .image {
+    width: 100%;
+  }
+}
+.cms-home {
+  .right-advertising {
+    .block {
+      p {
+        img {
+          margin-top: 30px;
+          float: right;
+        }
+      }
+    }
+  }
+  .banner-full {
+    img {
+      width: 100%;
+    }
+  }
+  .product-item {
+    .price-box {
+      margin: auto;
+    }
+  }
+  .affordable-contractors {
+    .category-image {
+      height: 240px;
+      display: table-cell;
+      vertical-align: bottom;
+    }
+  }
+}
+.woman-discount {
+  .block{
+    .product-item-details {
+      .product-item-name {
+        height: 33px;
+        overflow: hidden;
+      }
+    }
+  }
+}
+.page-layout-1column .block.widget .products-grid .product-item:nth-child(4n + 1) {
+  margin-left: 0;
+}
+.products-grid {
+  .product-item {
+    .product-label-image {
+      span {
+        &.label-text{
+          font-size: 1em;
+          font-weight: bold;
+          span {
+            font-size: 0.8em;
+            font-weight: normal;
+          }
+        }
+      }
+
+    }
+  }
+}
+.top-container {
+  position: relative;
+  padding: 0;
+  &::before {
+    content: '';
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: -9999px;
+    right: 0;
+    border-left: 9999px solid #f6f7fb;
+    box-shadow: 9999px 0 0 #f6f7fb;
+
+  }
+  .header-bottom {
+    background-color: #f6f7fb;
+  }
+}
+.banner-menu-box {
+  a {
+    float: left;
+    width: 100%;
+    pointer-events: all;
+  }
+}
+.block-search .action.search:hover {
+  background: #f7b80d;
+}
+.category-image .image {
+  height: 250px;
+}
+.products-grid .product-item-info:hover, .products-grid .product-item-info.active{
+  padding: 0;
+  position: unset;
+}
+.affordable-contractors, .bottom-advertising {
+  img {
+    width: 100%;
+  }
+  a {
+    width: 100%;
+    padding-top: 10px;
+    height: 100%;
+    float: left;
+    img {
+      width: 100%;
+    }
+  }
+
+}
+.prime-deal {
+  .product-item-details {
+    p {
+      img {
+        width: 50px;
+      }
+    }
+  }
 }

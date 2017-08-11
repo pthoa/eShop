@@ -1,10 +1,19 @@
 
+.block-search .action.search {
+  right: 0px;
+  background: #f7b80d;
+}
+.block-search .action.search:before {
+  color: #000;
+}
+.block-search .action.search:hover:before {
+    color: #000;
+}
 .block-search {
     float: left;
     margin-top: 10px;
     .block-content {
         border: 1px #d7d7d7 solid;
-        border-radius: 20px;
         overflow: hidden;
         width: 457px;
         .control {
@@ -43,11 +52,12 @@
     .action.search[disabled] {
         position: absolute;
         right: 0;
-        width: 58px;
         top: 0;
         height: 40px;
         margin: 0;
         padding: 0;
+        color: 000;
+
         pointer-events:auto;
         cursor: pointer;
     }
@@ -60,6 +70,7 @@
             float: left;
             height: 38px;
             border: none;
+            background: ##d7d7d7;
             border-left: 1px #ccc solid;
             border-right: 1px #ccc solid;
         }
@@ -71,8 +82,8 @@
 }
 .minicart-wrapper .action.showcart:before {
     font-size: 30px;
-    color: #f03e3e;
-    border-color: #f03e3e;
+    color: #4c4c4c;
+    border-color: #4c4c4c;
     margin-top: -13px;
     font-size: 40px;
     line-height: normal;
@@ -83,7 +94,7 @@
         padding-left: 40px;
     }
     .block-search .action.search {
-        width: 36px;
-        height: 38px;
+      width: 47px;
+height: 40px;
     }
 }
