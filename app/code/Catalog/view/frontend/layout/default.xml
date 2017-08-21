@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<body>
+<!--     <referenceContainer name="content"> -->
+    <!--     <block class="TMA\Catalog\Block\Product\View\Extra"
+            name="product.info.extra"
+            template="TMA_Catalog::product/view/extra.phtml"
+            before="-">
+        </block> -->
+    <move element="product.attribute.overview" destination="product.info.main" before="product.social.links" />
+    </referenceContainer>
+    <referenceContainer name="product.info.price" >
+       <referenceBlock name="product.info.stock.sku" remove="true" />
+    </referenceContainer>
+</body>

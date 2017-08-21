@@ -1,8 +1,31 @@
 <?xml version="1.0"?>
-<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
-    <body>
-        <referenceContainer name="product.info.main">
-            <block class="TMA\Catalog\Block\Product\View" name="product.seller.list" template="test.phtml" />
-        </referenceContainer>
-    </body>
-</page>
+<body>
+   <referenceBlock name="page.main.title">
+            <arguments>
+                <argument name="css_class" xsi:type="string">tma_title</argument>
+                <argument name="add_base_attribute" xsi:type="string">itemprop="name"</argument>
+            </arguments>
+        </referenceBlock>
+       
+        <referenceContainer name="content">
+      <!--   <block class="TMA\Catalog\Block\Product\View\Extra"
+            name="product.info.extra"
+            template="TMA_Catalog::product/view/extra.phtml"
+            before="-">
+        </block> -->
+   <!--        <move element="product.info.overview" destination="product.info.main" before="product.info.extrahint" /> -->
+       <!--  <move element="product.attribute.overview" destination="product.info.main" before="product.social.links" /> -->
+    </referenceContainer>
+
+  <!--   <referenceContainer name="product.info.main" >
+        <block class="TMA\Catalog\Block\Product\View\Extra"
+            name="product.info.extra"
+            template="TMA_Catalog::product/view/extra.phtml"
+            before="-">
+        </block>
+
+    </referenceContainer> -->
+   <!--  <referenceContainer name="product.info.price" >
+       <referenceBlock name="product.info.stock.sku" remove="true" />
+    </referenceContainer> -->
+</body>
