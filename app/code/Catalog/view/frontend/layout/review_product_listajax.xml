@@ -1,0 +1,24 @@
+<!-- <?xml version="1.0"?>
+<!--
+/**
+ * Copyright © 2016 Magento. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+-->
+<layout xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/layout_generic.xsd">
+    <container name="root">
+        <block class="TMA\Catalog\Block\Review\Product\View\ListView1" name="product.info.product_additional_data" as="product_additional_data" template="TMA_Catalog::product/view/list.phtml" />
+        <block class="Magento\Theme\Block\Html\Pager" name="product_review_list.toolbar">
+            <arguments>
+                <argument name="show_per_page" xsi:type="boolean">false</argument>
+                <argument name="show_amounts" xsi:type="boolean">false</argument>
+            </arguments>
+        </block>
+    </container>
+         <move element="product.review.form" destination="content.aside" after="catalog.product.related"/>
+             <move element="product.info.product_additional_data" destination="content.aside" after="catalog.product.related"/>
+    <!--  <move element="reviews.tab" destination="content.aside" after="catalog.product.related" /> -->
+
+    <!--   <move element="product.info.product_additional_data" destination="content.aside" after="catalog.product.related"/> -->
+</layout>
+ -->

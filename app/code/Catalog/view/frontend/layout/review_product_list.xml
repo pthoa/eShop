@@ -1,0 +1,28 @@
+<!-- <!-- <?xml version="1.0"?>
+<!--
+/**
+ * Copyright © 2016 Magento. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+-->
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" layout="1column" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <update handle="catalog_product_view"/>
+    <body>
+        
+        <referenceContainer name="content">
+            <container name="product.info.details" htmlTag="div" htmlClass="product info detailed" after="product.info.media">
+                <block class="TMA\Catalog\Block\Form" name="product.review.form" as="review_form">
+                    <container name="product.review.form.fields.before" as="form_fields_before" label="Review Form Fields Before" htmlTag="div" htmlClass="rewards"/>
+                </block>
+                <block class="TMA\Catalog\Block\Review\Product\View\ListView1" name="product.info.product_additional_data" as="product_additional_data" template="TMA_Catalog::product/view/list.phtml"/>
+                <block class="Magento\Theme\Block\Html\Pager" name="product_review_list.toolbar"/>
+            </container>
+        </referenceContainer>
+             <move element="product.review.form" destination="content.aside" after="catalog.product.related"/>
+             <move element="product.info.product_additional_data" destination="content.aside" after="catalog.product.related"/>
+        <!--  <move element="reviews.tab" destination="content.aside" after="catalog.product.related" /> -->
+
+        <!--  <move element="product.info.product_additional_data" destination="content.aside" after="catalog.product.related"/> -->
+    </body>
+</page>
+ --> -->

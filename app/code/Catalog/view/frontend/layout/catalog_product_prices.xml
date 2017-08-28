@@ -11,11 +11,12 @@
             <argument name="default" xsi:type="array">
                 <item name="prices" xsi:type="array">
                     <item name="final_price" xsi:type="array">
-                        <item name="render_class" xsi:type="string">Magento\Catalog\Pricing\Render\FinalPriceBox</item>
+                        <item name="render_class" xsi:type="string">TMA\Catalog\Pricing\Render\FinalPriceBox</item>
                         <item name="render_template" xsi:type="string">TMA_Catalog::price/final_price.phtml</item>
                     </item>
                 </item>
             </argument>
         </arguments>
     </referenceBlock>
+   
 </layout>
