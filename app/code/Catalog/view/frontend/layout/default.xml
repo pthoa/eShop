@@ -11,4 +11,6 @@
     <referenceContainer name="product.info.price" >
        <referenceBlock name="product.info.stock.sku" remove="true" />
     </referenceContainer>
+    
+
 </body>

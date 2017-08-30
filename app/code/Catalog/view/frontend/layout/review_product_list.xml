@@ -1,4 +1,4 @@
-<!-- <!-- <?xml version="1.0"?>
+<!-- <?xml version="1.0"?>
 <!--
 /**
  * Copyright © 2016 Magento. All rights reserved.
@@ -18,11 +18,12 @@
                 <block class="Magento\Theme\Block\Html\Pager" name="product_review_list.toolbar"/>
             </container>
         </referenceContainer>
-             <move element="product.review.form" destination="content.aside" after="catalog.product.related"/>
-             <move element="product.info.product_additional_data" destination="content.aside" after="catalog.product.related"/>
+            
+             <move element="product.info.product_additional_data" destination="content.aside" after="product.info.description"/>
+              <move element="product.review.form" destination="content.aside" after="product.info.product_additional_data"/>
         <!--  <move element="reviews.tab" destination="content.aside" after="catalog.product.related" /> -->
 
         <!--  <move element="product.info.product_additional_data" destination="content.aside" after="catalog.product.related"/> -->
     </body>
 </page>
- --> -->
+ -->

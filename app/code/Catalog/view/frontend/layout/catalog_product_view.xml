@@ -1,6 +1,7 @@
 <?xml version="1.0"?>
 <body>
-   
+
+
    <referenceBlock name="page.main.title">
             <arguments>
                 <argument name="css_class" xsi:type="string">tma_title</argument>
@@ -76,6 +77,9 @@
                      <block class="Magento\Review\Block\Product\View\ListView" name="product.info.product_additional_data" as="product_additional_data" template="TMA_Catalog::product/view/list.phtml"/>
                 </referenceBlock>
      </referenceBlock> --> -->
+      <referenceContainer name="content.aside">
+    <block class="Magento\Catalog\Block\Product\Compare\ListCompare" name="catalog.compare.list" template="Magento_Catalog::product/compare/list.phtml" cacheable="false" after="catalog.product.related"/>
+  </referenceContainer>
       <move element="page.main.title" destination="product.info.main" before="-"/>
          <move element="product.info.review" destination="product.info.main" before="product.info.price"/>
          <move element="product.info.stock.sku" destination="product.info.main" after="product.info.price"/>
@@ -88,8 +92,9 @@
 
        <!--     <move element="reviews.tab" destination="content.aside" after="catalog.product.related" /> -->
 
-            <move element="product.review.form" destination="content.aside" after="catalog.product.related"/>
-             <move element="product.info.product_additional_data" destination="content.aside" after="catalog.product.related"/>
+            
+             <move element="product.info.product_additional_data" destination="content.aside" after="product.info.description"/>
+             <move element="product.review.form" destination="content.aside" after="product.info.product_additional_data"/>
 
          <!--   <move element="review.tab" destination=
             "content.aside" after="catalog.product.related"/> -->

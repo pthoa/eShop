@@ -18,7 +18,7 @@
     $format = $block->getDateFormat() ?: \IntlDateFormatter::SHORT;
 ?>
 <?php if (count($_items)):?>
-<div class="block review-list" id="reviews">
+<div class="block review-list" style="margin-bottom: 10px;" id="reviews">
     <div class="block-title">
         <strong><?php /* @escapeNotVerified */ echo __('Customer Reviews') ?></strong>
     </div>
@@ -67,7 +67,7 @@
             </li>
         <?php endforeach; ?>
         </ol>
-        <div class="toolbar review-toolbar">
+        <div class="toolbar review-toolbar" style="border-top-width: 0px;margin-bottom: 0px;">
             <?php echo $block->getChildHtml('toolbar') ?>
         </div>
     </div>

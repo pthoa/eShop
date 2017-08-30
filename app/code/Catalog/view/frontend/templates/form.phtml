@@ -15,7 +15,8 @@
 <div class="block-content">
 <?php if ($block->getAllowWriteReviewFlag()): ?>
     <div>
-        <button class="button primary" id="button_review"> <span>Write your reivew</span></button>
+        <button class="button primary" id="button_review" onclick="myFunction()" 
+        style="margin-right:5px;white-space: normal;padding-top: 5px;padding-bottom: 5px; background-color : #0157AE;border-radius: 0px;border: 1px solid #0157AE;" class="action submit primary"><span style="color: white;font-size: 14px;" >Write a reivew</span></button>
     </div>
 <form action="<?php /* @escapeNotVerified */ echo $block->getAction() ?>" class="review-form" method="post" id="review-form" data-role="product-review-form" data-bind="scope: 'review-form'" hidden="true">
     <?php echo $block->getBlockHtml('formkey'); ?>
@@ -96,11 +97,19 @@
 </script>
 
 <script type="text/javascript">
-$(document).ready(function(){
+/*$(document).ready(function(){
     $("#button_review").click(function(){
-        $("#review_form").toggle();
+        $("#review_form").toggle("show");
     });
-});
+});*/
+function myFunction() {
+    var x = document.getElementById('review-form');
+    if (x.style.display === 'none') {
+        x.style.display = 'block';
+    } else {
+        x.style.display = 'none';
+    }
+}
 </script>
 <?php else: ?>
     <div class="message info notlogged" id="review-form">
