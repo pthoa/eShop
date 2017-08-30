@@ -18,20 +18,16 @@
  * @copyright   Copyright (c) 2016 TMA (http://www.TMA.com/)
  * @license     https://www.TMA.com/LICENSE.txt
  */
-
-namespace TMA\SocialLogin\Block\Form;
+namespace TMA\SocialLogin\Controller\Social;
 
 /**
- * Class Login
- * @package TMA\SocialLogin\Block\Form
+ * Class Callback
+ * @package TMA\SocialLogin\Controller\Social
  */
-class Login extends \Magento\Customer\Block\Form\Login
+class Callback extends \Magento\Framework\App\Action\Action
 {
-	/**
-	 * @return $this
-	 */
-	protected function _prepareLayout()
+	public function execute()
 	{
-		return $this;
+		\Hybrid_Endpoint::process();
 	}
 }

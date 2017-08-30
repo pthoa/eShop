@@ -18,20 +18,21 @@
  * @copyright   Copyright (c) 2016 TMA (http://www.TMA.com/)
  * @license     https://www.TMA.com/LICENSE.txt
  */
+namespace TMA\SocialLogin\Model\ResourceModel;
 
-namespace TMA\SocialLogin\Block\Form;
+use Magento\Framework\Model\ResourceModel\Db\AbstractDb;
 
 /**
- * Class Login
- * @package TMA\SocialLogin\Block\Form
+ * Class Social
+ * @package TMA\SocialLogin\Model\ResourceModel
  */
-class Login extends \Magento\Customer\Block\Form\Login
+class Social extends AbstractDb
 {
 	/**
-	 * @return $this
+	 * Define main table
 	 */
-	protected function _prepareLayout()
+	protected function _construct()
 	{
-		return $this;
+		$this->_init('tma_social_customer', 'social_customer_id');
 	}
 }

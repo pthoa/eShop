@@ -1,4 +1,3 @@
-<?php
 /**
  * TMA
  *
@@ -19,19 +18,10 @@
  * @license     https://www.TMA.com/LICENSE.txt
  */
 
-namespace TMA\SocialLogin\Block\Form;
-
-/**
- * Class Login
- * @package TMA\SocialLogin\Block\Form
- */
-class Login extends \Magento\Customer\Block\Form\Login
-{
-	/**
-	 * @return $this
-	 */
-	protected function _prepareLayout()
-	{
-		return $this;
-	}
-}
+var config = {
+    paths: {
+    	socialMagnific: 'TMA_SocialLogin/js/jquery.magnific-popup.min',
+        socialProvider: 'TMA_SocialLogin/js/provider',
+        socialPopupForm: 'TMA_SocialLogin/js/popup'
+    }
+};

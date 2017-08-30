@@ -22,10 +22,10 @@
 namespace TMA\SocialLogin\Block\Form;
 
 /**
- * Class Login
+ * Class Register
  * @package TMA\SocialLogin\Block\Form
  */
-class Login extends \Magento\Customer\Block\Form\Login
+class Register extends \Magento\Customer\Block\Form\Register
 {
 	/**
 	 * @return $this

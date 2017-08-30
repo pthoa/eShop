@@ -1,15 +1,27 @@
 <?xml version="1.0"?>
 <!--
 /**
- * Copyright © 2016 Magento. All rights reserved.
- * See COPYING.txt for license details.
+ * TMA
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the TMA.com license that is
+ * available through the world-wide-web at this URL:
+ * https://www.TMA.com/LICENSE.txt
+ *
+ * DISCLAIMER
+ *
+ * Do not edit or add to this file if you wish to upgrade this extension to newer
+ * version in the future.
+ *
+ * @category    TMA
+ * @package     TMA_SocialLogin
+ * @copyright   Copyright (c) 2016 TMA (http://www.TMA.com/)
+ * @license     https://www.TMA.com/LICENSE.txt
  */
 -->
-<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" layout="1column" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
-    <body>
-    	<referenceContainer name="customer.login.container" label="Customer Login Container" htmlTag="div" htmlClass="login-container">
-            <block class="Magento\Customer\Block\Form\Login" name="social-login-popup-authentication-social-login" template="TMA_SocialLogin::form/social.phtml" after="customer.new"> 
-            </block>
-        </referenceContainer>
-    </body>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <referenceContainer name="customer.login.container">
+        <block class="TMA\SocialLogin\Block\Popup\Social" after="customer.new" ifconfig="sociallogin/general/is_enabled" name="social-login-popup-authentication-social-login" template="TMA_SocialLogin::form/social.phtml" />
+    </referenceContainer>
 </page>

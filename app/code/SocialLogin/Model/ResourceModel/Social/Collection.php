@@ -18,20 +18,21 @@
  * @copyright   Copyright (c) 2016 TMA (http://www.TMA.com/)
  * @license     https://www.TMA.com/LICENSE.txt
  */
+namespace TMA\SocialLogin\Model\ResourceModel\Social;
 
-namespace TMA\SocialLogin\Block\Form;
+use Magento\Framework\Model\ResourceModel\Db\Collection\AbstractCollection;
 
 /**
- * Class Login
- * @package TMA\SocialLogin\Block\Form
+ * Class Collection
+ * @package TMA\SocialLogin\Model\ResourceModel\Social
  */
-class Login extends \Magento\Customer\Block\Form\Login
+class Collection extends AbstractCollection
 {
-	/**
-	 * @return $this
-	 */
-	protected function _prepareLayout()
-	{
-		return $this;
-	}
+    /**
+     * Define model & resource model
+     */
+    protected function _construct()
+    {
+        $this->_init('TMA\SocialLogin\Model\Social', 'TMA\SocialLogin\Model\ResourceModel\Social');
+    }
 }
