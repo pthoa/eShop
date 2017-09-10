@@ -1,0 +1,100 @@
+
+.block-search .action.search {
+  right: 0px;
+  background: #f7b80d;
+}
+.block-search .action.search:before {
+  color: #000;
+}
+.block-search .action.search:hover:before {
+    color: #000;
+}
+.block-search {
+    float: left;
+    margin-top: 10px;
+    .block-content {
+        border: 1px #d7d7d7 solid;
+        overflow: hidden;
+        width: 457px;
+        .control {
+
+            select {
+                margin: 0;
+                width: 150px;
+                height: 38px;
+                background-color: transparent;
+                border: 1px solid #ccc;
+                border-top: 0;
+                border-bottom: 0;
+                font-family: Arial;
+                font-size: 13px;
+                line-height: 34px;
+                color: #777;
+                padding: 2px 0;
+                padding-left: 10px;
+                float: left;
+                border-radius: 0;
+                outline: none;
+                -moz-appearance: none;
+                -webkit-appearance: none;
+            }
+            input[type="text"] {
+                float: left;
+                width: 250px;
+                height: 38px;
+                border: none;
+                outline: none;
+                font-size: 13px;
+                padding-right: 9px;
+            }
+        }
+    }
+    .action.search[disabled] {
+        position: absolute;
+        right: 0;
+        top: 0;
+        height: 40px;
+        margin: 0;
+        padding: 0;
+        color: 000;
+
+        pointer-events:auto;
+        cursor: pointer;
+    }
+    .field.search {
+        float: left;
+    }
+    .cat-container {
+        float: left;
+        select {
+            float: left;
+            height: 38px;
+            border: none;
+            background: ##d7d7d7;
+            border-left: 1px #ccc solid;
+            border-right: 1px #ccc solid;
+        }
+    }
+    .actions {
+        float: left;
+    }
+
+}
+.minicart-wrapper .action.showcart:before {
+    font-size: 30px;
+    color: #4c4c4c;
+    border-color: #4c4c4c;
+    margin-top: -13px;
+    font-size: 40px;
+    line-height: normal;
+}
+@media (min-width: 768px) {
+    .block-search {
+        width: auto;
+        padding-left: 40px;
+    }
+    .block-search .action.search {
+      width: 47px;
+height: 40px;
+    }
+}

@@ -1,0 +1,95 @@
+// /**
+//  * Copyright © 2016 Magento. All rights reserved.
+//  * See COPYING.txt for license details.
+//  */
+
+//
+//  Variables
+//  _____________________________________________
+
+@checkout-summary__background-color: @color-white-smoke;
+@checkout-summary__padding: 22px @indent__l;
+
+@checkout-summary-title__margin: @indent__s;
+@checkout-summary-mark-value__color: @color-gray60;
+
+@checkout-summary-items__max-height: 370px;
+@checkout-summary-items__padding: 15px;
+
+//
+//  Common
+//  _____________________________________________
+
+& when (@media-common = true) {
+
+    //
+    //  Order Summary
+    //  ---------------------------------------------
+
+    .col-right {
+	
+		position:static;
+		
+		clear: right;
+		float: right;
+		margin-top:25px;
+        }
+
+        // 
+	.col-right1 {
+      
+		
+		 padding: 1px 20px 25px;
+		 width: 100%;
+		 border-top: 2px solid #0157ae;
+		 position:static;
+		
+		clear: right;
+		float: right;
+		background: #f5f5f5;
+		margin-bottom: 25px;
+		
+		}
+       
+	 .col-left{
+		margin-top:25px;
+		border-top: 2px solid #0157ae;
+		border-right: 1px solid #dedfe4;
+		border-left: 1px solid #dedfe4;
+	 }
+
+}
+
+
+//
+//  Mobile
+//  _____________________________________________
+
+.media-width(@extremum, @break) when (@extremum = 'max') and (@break = @screen__s) {
+    .opc-block-summary {
+        > .title {
+            border-bottom: 0;
+            .lib-css(font-size, @checkout-step-title-mobile__font-size);
+            margin-bottom: @indent__base;
+            padding-bottom: 0;
+        }
+
+        .totals {
+            &:extend(.abs-sidebar-totals-mobile all);
+        }
+    }
+}
+
+//
+//  Desktop
+//  _____________________________________________
+
+.media-width(@extremum, @break) when (@extremum = 'min') and (@break = @screen__m) {
+    .opc-summary-wrapper {
+        .modal-header {
+            .action-close {
+                display: none;
+            }
+        }
+    }
+}

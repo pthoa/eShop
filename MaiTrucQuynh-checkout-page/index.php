@@ -3,7 +3,7 @@
 <head>
   <title>Check out page</title>
   <meta charset="utf-8">
-  <link href="web/css/checkout-page.css" rel="stylesheet" type="text/css" ">
+  <link href="web/css/checkout-page.css" rel="stylesheet" type="text/css">
   <link href="web/css/font/font-awesome.css" rel="stylesheet" type="text/css" />
   <link href="web/bootstrap/css/bootstrap.css" rel="stylesheet" type="text/css" />
   <link href="web/bootstrap/css/bootstrap-theme.css" rel="stylesheet" type="text/css" />

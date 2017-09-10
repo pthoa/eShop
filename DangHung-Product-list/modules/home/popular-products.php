@@ -1,10 +1,11 @@
 <section class="sec-popular-products">
 	<h3>Popular Products</h3>
+	
 	<div class="slide-popular-products">
-	    <div class="carousel slide" data-ride="carousel" data-type="multi" data-interval="3000" id="myCarousel" style="height: 100%;">
+	    <div class="carousel slide" data-ride="carousel" data-type="multi" data-interval="5000" id="myCarousel" style="height: 100%;">
 	      <div class="carousel-inner col-md-12 col-xs-12">
 	        <div class="item active">
-				<div class="col-md-3 col-sm-3 col-xs-3">
+				<div class="col-md-3 col-xs-12 col-sm-6">
 					<a href="#">
 						<img src="web/images/slide_1.jpg" class="img-responsive">
 					</a>
@@ -19,7 +20,7 @@
 				</div>
 	        </div>
 	        <div class="item">
-				<div class="col-md-3 col-sm-3 col-xs-3">
+				<div class="col-md-3 col-xs-12 col-sm-6">
 					<a href="#">
 						<img src="web/images/slide_2.jpg" class="img-responsive">
 					</a>
@@ -29,7 +30,7 @@
 				</div>
 	        </div>
 	        <div class="item">
-				<div class="col-md-3 col-sm-3 col-xs-3">
+				<div class="col-md-3 col-xs-12 col-sm-6">
 					<a href="#">
 					<img src="web/images/slide_3.jpg" class="img-responsive">
 					</a>
@@ -39,7 +40,7 @@
 				</div>
 	        </div>
 	        <div class="item">
-				<div class="col-md-3 col-sm-3 col-xs-3">
+				<div class="col-md-3 col-xs-12 col-sm-6">
 					<a href="#">
 					<img src="web/images/slide_4.jpg" class="img-responsive">
 					</a>
@@ -49,7 +50,7 @@
 				</div>
 	        </div>
 	        <div class="item">
-				<div class="col-md-3 col-sm-3 col-xs-3">
+				<div class="col-md-3 col-xs-12 col-sm-6">
 					<a href="#">
 					<img src="web/images/slide_5.jpg" class="img-responsive">
 					</a>
@@ -59,7 +60,7 @@
 				</div>
 	        </div>
 	        <div class="item">
-				<div class="col-md-3 col-sm-3 col-xs-3">
+				<div class="col-md-3 col-xs-12 col-sm-6">
 					<a href="#">
 					<img src="web/images/slide_6.jpg" class="img-responsive">
 					</a>
@@ -69,7 +70,7 @@
 				</div>
 	        </div>
 	        <div class="item">
-				<div class="col-md-3 col-sm-3 col-xs-3">
+				<div class="col-md-3 col-xs-12 col-sm-6">
 					<a href="#">
 					<img src="web/images/slide_7.jpg" class="img-responsive">
 					</a>
@@ -79,7 +80,7 @@
 				</div>
 	        </div>
 	        <div class="item">
-				<div class="col-md-3 col-sm-3 col-xs-3">
+				<div class="col-md-3 col-xs-12 col-sm-6">
 					<a href="#">
 					<img src="web/images/slide_8.jpg" class="img-responsive">
 					</a>

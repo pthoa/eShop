@@ -1,0 +1,26 @@
+.fotorama__nav--thumbs {
+	padding-left: 25px !important;
+	padding-right: 25px !important;
+}
+
+.fotorama__thumb-border {
+	border-width: 1px !important;
+	border: 1px solid #ABABAB;
+}
+
+.fotorama__arr--disabled {
+    pointer-events: visible;
+}
+
+.fotorama__nav--thumbs .fotorama__nav__frame {
+	/*padding-top: 8px !important;
+	padding-bottom: 8px !important;*/
+	
+}
+.fotorama__nav__frame--thumb {
+	/*margin-left: 3px;*/
+	padding-top: 0px;
+}
+.fotorama__nav__shaft .fotorama__loaded--img {
+	border: 1px solid #DCDCDC;
+}

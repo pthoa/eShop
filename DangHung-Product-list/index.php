@@ -2,16 +2,18 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Product List</title>
 
   <link href="web/css/font/font-awesome.css" rel="stylesheet" type="text/css" />
   <link href="web/bootstrap/css/bootstrap.css" rel="stylesheet" type="text/css" />
-  <link href="web/bootstrap/css/bootstrap-theme.css" rel="stylesheet" type="text/css" />
-  <link href="web/bootstrap/css/bootstrap-theme.css" rel="stylesheet" type="text/css" />
+  <!-- <link href="web/bootstrap/css/bootstrap-theme.css" rel="stylesheet" type="text/css" />
+  <link href="web/bootstrap/css/bootstrap-theme.css" rel="stylesheet" type="text/css" /> -->
   <link href="web/css/home.css" rel="stylesheet" type="text/css" />
   <script src="web/js/jquery-3.2.1.min.js" type="text/javascript"></script>
   <script src="web/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+
+  
 
   
 </head>
@@ -24,6 +26,7 @@
         ?>
     </div>
     <script type="text/javascript">
+        /*---------------Slide---------------*/
         $('.carousel[data-type="multi"] .item').each(function(){
           var next = $(this).next();
           if (!next.length) {
@@ -41,6 +44,7 @@
           }
         });
 
+        /*----------------Button-view----------------*/
         $('#btn-display-grid').on('click', function() {
             $('#display-grid').show();
             $('#display-list').hide();
@@ -53,6 +57,16 @@
             $(this).css("color", "#0157AE");
             $('#btn-display-grid').css("color", "#6C6C6C");
         })
+
+
+        /*-------------------Span-collapse----------------*/
+        $('#my-collapse').on('shown.bs.collapse', function() {
+            $(".servicedrop").addClass('glyphicon-arrow-down').removeClass('glyphicon-arrow-right');
+          });
+
+        $('#my-collapse').on('hidden.bs.collapse', function() {
+            $(".servicedrop").addClass('glyphicon-arrow-right').removeClass('glyphicon-arrow-down');
+          });
     </script>
 </body>
 </html>

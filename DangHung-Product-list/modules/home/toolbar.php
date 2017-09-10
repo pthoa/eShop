@@ -1,12 +1,12 @@
 <section class="sec-toolbar">
 	<div class="sort_result">
 	    <div class="row">
-	        <div class="col-md-6 col-sm-6 col-xs-12 left-result">
+	        <div class="col-md-6 col-sm-5 col-xs-12 left-result">
 	            <font>Showing 6 of ? for</font> 
 	            <span>4 stars & up </span>
 	        </div>
 
-	        <div class="col-md-6 col-sm-6 col-xs-12 right-result">
+	        <div class="col-md-6 col-sm-7 col-xs-12 right-result">
 	            <div class="btn-grp">
 	                <button id="btn-display-grid">
 	                    <span class="glyphicon glyphicon-th-large"></span>   

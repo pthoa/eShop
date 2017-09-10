@@ -1,0 +1,30 @@
+<ul class="header links">
+<?php 
+//$welcomeMessage = $block->getWelcome();
+$objectManager = \Magento\Framework\App\ObjectManager::getInstance();
+
+$context = $objectManager->get('Magento\Framework\App\Http\Context');
+/** @var bool $isLoggedIn */
+$isLoggedIn = $context->getValue(\Magento\Customer\Model\Context::CONTEXT_AUTH);
+//print_r($welcomeMessage);
+    if($isLoggedIn){// Logged In
+	$customerSession = $objectManager->create('Magento\Customer\Model\Session');
+?>
+	<li class="authorization-link" data-label="|">
+        <a href="<?php echo $this->getUrl('customer/account'); ?>"><?php echo __("Hi "). $customerSession->getCustomer()->getName();?></a>
+    </li>
+    <li><a href="<?php echo $this->getUrl('customer/account/logout'); ?>"><?php echo __("Logout");?></a></li>
+<?php
+        
+    }else{// Not Logged In
+?>
+	<li class="authorization-link" data-label="|">
+        <a href="<?php echo $this->getUrl('customer/account/create/');?>"><?php echo __("Register");?></a>
+    </li>
+    <li><a href="<?php echo $this->getUrl('customer/account/login/')?>"><?php echo __("Sign In");?></a></li>
+<?php
+        
+    }
+ ?>
+    
+</ul>

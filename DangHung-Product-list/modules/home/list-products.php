@@ -1,10 +1,10 @@
 <section class="sec-list-products">
 
-	<div id="display-grid" style="display: none;">
-		<div class="row" style="padding-top: 15px; padding-bottom: 15px;">
-			<div class="col-md-4 col-sm-6 col-xs-12">
+	<div id="display-grid" >
+		<div class="row">
+			<div class="col-md-4 col-sm-6 col-xs-12 bordery-no-top-left">
 				<a href="">
-					<img src="web/images/cellphones_1.jpg" style="height: 240px; width: 100%;">
+					<img src="web/images/cellphones_1.jpg" class="style_prevu_kit">
 				</a>
 				<div class="product-title">
 					Samsung Galaxy S4 SGH-I337 USA GSM Unlocked Cellphone, 16GB, Frost White
@@ -14,9 +14,9 @@
 					<img src="web/images/prime.png">
 				</div>
 			</div>
-			<div class="col-md-4 col-sm-6 col-xs-12">
+			<div class="col-md-4 col-sm-6 col-xs-12 bordery-no-top-left">
 				<a href="">
-					<img src="web/images/cellphones_1.jpg" style="height: 240px; width: 100%;">
+					<img src="web/images/cellphones_1.jpg" class="style_prevu_kit">
 				</a>
 				<div class="product-title">
 					Samsung Galaxy S4 SGH-I337 USA GSM Unlocked Cellphone, 16GB, Frost White
@@ -26,9 +26,9 @@
 					<img src="web/images/prime.png">
 				</div>
 			</div>
-			<div class="col-md-4 col-sm-6 col-xs-12">
+			<div class="col-md-4 col-sm-6 col-xs-12 bordery-bottom">
 				<a href="">
-					<img src="web/images/cellphones_1.jpg" style="height: 240px; width: 100%;">
+					<img src="web/images/cellphones_1.jpg" class="style_prevu_kit">
 				</a>
 				<div class="product-title">
 					Samsung Galaxy S4 SGH-I337 USA GSM Unlocked Cellphone, 16GB, Frost White
@@ -40,10 +40,10 @@
 			</div>
 		</div>
 		
-		<div class="row" style="padding-top: 15px; padding-bottom: 15px;">
-			<div class="col-md-4 col-sm-6 col-xs-12">
+		<div class="row" style="padding-top: 5px;">
+			<div class="col-md-4 col-sm-6 col-xs-12 bordery-no-top-left">
 				<a href="">
-					<img src="web/images/cellphones_1.jpg" style="height: 240px; width: 100%;">
+					<img src="web/images/cellphones_1.jpg" class="style_prevu_kit">
 				</a>
 				<div class="product-title">
 					Samsung Galaxy S4 SGH-I337 USA GSM Unlocked Cellphone, 16GB, Frost White
@@ -53,9 +53,9 @@
 					<img src="web/images/prime.png">
 				</div>
 			</div>
-			<div class="col-md-4 col-sm-6 col-xs-12">
+			<div class="col-md-4 col-sm-6 col-xs-12 bordery-no-top-left">
 				<a href="">
-					<img src="web/images/cellphones_1.jpg" style="height: 240px; width: 100%;">
+					<img src="web/images/cellphones_1.jpg" class="style_prevu_kit">
 				</a>
 				<div class="product-title">
 					Samsung Galaxy S4 SGH-I337 USA GSM Unlocked Cellphone, 16GB, Frost White
@@ -65,48 +65,9 @@
 					<img src="web/images/prime.png">
 				</div>
 			</div>
-			<div class="col-md-4 col-sm-6 col-xs-12">
+			<div class="col-md-4 col-sm-6 col-xs-12 bordery-bottom">
 				<a href="">
-					<img src="web/images/cellphones_1.jpg" style="height: 240px; width: 100%;">
-				</a>
-				<div class="product-title">
-					Samsung Galaxy S4 SGH-I337 USA GSM Unlocked Cellphone, 16GB, Frost White
-				</div>
-				<div class="product-price">
-					<label class="price-label"><sup>$</sup>169.95</label>
-					<img src="web/images/prime.png">
-				</div>
-			</div>
-		</div>
-
-		<div class="row" style="padding-top: 15px; padding-bottom: 15px;">
-			<div class="col-md-4 col-sm-6 col-xs-12">
-				<a href="">
-					<img src="web/images/cellphones_1.jpg" style="height: 240px; width: 100%;">
-				</a>
-				<div class="product-title">
-					Samsung Galaxy S4 SGH-I337 USA GSM Unlocked Cellphone, 16GB, Frost White
-				</div>
-				<div class="product-price">
-					<label class="price-label"><sup>$</sup>169.95</label>
-					<img src="web/images/prime.png">
-				</div>
-			</div>
-			<div class="col-md-4 col-sm-6 col-xs-12">
-				<a href="">
-					<img src="web/images/cellphones_1.jpg" style="height: 240px; width: 100%;">
-				</a>
-				<div class="product-title">
-					Samsung Galaxy S4 SGH-I337 USA GSM Unlocked Cellphone, 16GB, Frost White
-				</div>
-				<div class="product-price">
-					<label class="price-label"><sup>$</sup>169.95</label>
-					<img src="web/images/prime.png">
-				</div>
-			</div>
-			<div class="col-md-4 col-sm-6 col-xs-12">
-				<a href="">
-					<img src="web/images/cellphones_1.jpg" style="height: 240px; width: 100%;">
+					<img src="web/images/cellphones_1.jpg" class="style_prevu_kit">
 				</a>
 				<div class="product-title">
 					Samsung Galaxy S4 SGH-I337 USA GSM Unlocked Cellphone, 16GB, Frost White
@@ -118,10 +79,10 @@
 			</div>
 		</div>
 
-		<div class="row" style="padding-top: 15px; padding-bottom: 15px;">
-			<div class="col-md-4 col-sm-6 col-xs-12">
+		<div class="row" style="padding-top: 5px;">
+			<div class="col-md-4 col-sm-6 col-xs-12 bordery-no-top-left">
 				<a href="">
-					<img src="web/images/cellphones_1.jpg" style="height: 240px; width: 100%;">
+					<img src="web/images/cellphones_1.jpg" class="style_prevu_kit">
 				</a>
 				<div class="product-title">
 					Samsung Galaxy S4 SGH-I337 USA GSM Unlocked Cellphone, 16GB, Frost White
@@ -131,9 +92,9 @@
 					<img src="web/images/prime.png">
 				</div>
 			</div>
-			<div class="col-md-4 col-sm-6 col-xs-12">
+			<div class="col-md-4 col-sm-6 col-xs-12 bordery-no-top-left">
 				<a href="">
-					<img src="web/images/cellphones_1.jpg" style="height: 240px; width: 100%;">
+					<img src="web/images/cellphones_1.jpg" class="style_prevu_kit" >
 				</a>
 				<div class="product-title">
 					Samsung Galaxy S4 SGH-I337 USA GSM Unlocked Cellphone, 16GB, Frost White
@@ -143,9 +104,9 @@
 					<img src="web/images/prime.png">
 				</div>
 			</div>
-			<div class="col-md-4 col-sm-6 col-xs-12">
+			<div class="col-md-4 col-sm-6 col-xs-12 bordery-bottom">
 				<a href="">
-					<img src="web/images/cellphones_1.jpg" style="height: 240px; width: 100%;">
+					<img src="web/images/cellphones_1.jpg" class="style_prevu_kit" >
 				</a>
 				<div class="product-title">
 					Samsung Galaxy S4 SGH-I337 USA GSM Unlocked Cellphone, 16GB, Frost White
@@ -157,10 +118,10 @@
 			</div>
 		</div>
 
-		<div class="row" style="padding-top: 15px; padding-bottom: 15px;">
-			<div class="col-md-4 col-sm-6 col-xs-12">
+		<div class="row" style="padding-top: 5px;">
+			<div class="col-md-4 col-sm-6 col-xs-12 bordery-no-top-left">
 				<a href="">
-					<img src="web/images/cellphones_1.jpg" style="height: 240px; width: 100%;">
+					<img src="web/images/cellphones_1.jpg" class="style_prevu_kit" >
 				</a>
 				<div class="product-title">
 					Samsung Galaxy S4 SGH-I337 USA GSM Unlocked Cellphone, 16GB, Frost White
@@ -170,9 +131,9 @@
 					<img src="web/images/prime.png">
 				</div>
 			</div>
-			<div class="col-md-4 col-sm-6 col-xs-12">
+			<div class="col-md-4 col-sm-6 col-xs-12 bordery-no-top-left">
 				<a href="">
-					<img src="web/images/cellphones_1.jpg" style="height: 240px; width: 100%;">
+					<img src="web/images/cellphones_1.jpg" class="style_prevu_kit" >
 				</a>
 				<div class="product-title">
 					Samsung Galaxy S4 SGH-I337 USA GSM Unlocked Cellphone, 16GB, Frost White
@@ -182,9 +143,87 @@
 					<img src="web/images/prime.png">
 				</div>
 			</div>
-			<div class="col-md-4 col-sm-6 col-xs-12">
+			<div class="col-md-4 col-sm-6 col-xs-12 bordery-bottom">
 				<a href="">
-					<img src="web/images/cellphones_1.jpg" style="height: 240px; width: 100%;">
+					<img src="web/images/cellphones_1.jpg" class="style_prevu_kit" >
+				</a>
+				<div class="product-title">
+					Samsung Galaxy S4 SGH-I337 USA GSM Unlocked Cellphone, 16GB, Frost White
+				</div>
+				<div class="product-price">
+					<label class="price-label"><sup>$</sup>169.95</label>
+					<img src="web/images/prime.png">
+				</div>
+			</div>
+		</div>
+
+		<div class="row" style="padding-top: 5px;">
+			<div class="col-md-4 col-sm-6 col-xs-12 bordery-no-top-left">
+				<a href="">
+					<img src="web/images/cellphones_1.jpg" class="style_prevu_kit" >
+				</a>
+				<div class="product-title">
+					Samsung Galaxy S4 SGH-I337 USA GSM Unlocked Cellphone, 16GB, Frost White
+				</div>
+				<div class="product-price">
+					<label class="price-label"><sup>$</sup>169.95</label>
+					<img src="web/images/prime.png">
+				</div>
+			</div>
+			<div class="col-md-4 col-sm-6 col-xs-12 bordery-no-top-left">
+				<a href="">
+					<img src="web/images/cellphones_1.jpg" class="style_prevu_kit" >
+				</a>
+				<div class="product-title">
+					Samsung Galaxy S4 SGH-I337 USA GSM Unlocked Cellphone, 16GB, Frost White
+				</div>
+				<div class="product-price">
+					<label class="price-label"><sup>$</sup>169.95</label>
+					<img src="web/images/prime.png">
+				</div>
+			</div>
+			<div class="col-md-4 col-sm-6 col-xs-12 bordery-bottom">
+				<a href="">
+					<img src="web/images/cellphones_1.jpg" class="style_prevu_kit" >
+				</a>
+				<div class="product-title">
+					Samsung Galaxy S4 SGH-I337 USA GSM Unlocked Cellphone, 16GB, Frost White
+				</div>
+				<div class="product-price">
+					<label class="price-label"><sup>$</sup>169.95</label>
+					<img src="web/images/prime.png">
+				</div>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-md-4 col-sm-6 col-xs-12 bordery-right">
+				<a href="">
+					<img src="web/images/cellphones_1.jpg" class="style_prevu_kit" >
+				</a>
+				<div class="product-title">
+					Samsung Galaxy S4 SGH-I337 USA GSM Unlocked Cellphone, 16GB, Frost White
+				</div>
+				<div class="product-price">
+					<label class="price-label"><sup>$</sup>169.95</label>
+					<img src="web/images/prime.png">
+				</div>
+			</div>
+			<div class="col-md-4 col-sm-6 col-xs-12 bordery-right">
+				<a href="">
+					<img src="web/images/cellphones_1.jpg" class="style_prevu_kit" >
+				</a>
+				<div class="product-title">
+					Samsung Galaxy S4 SGH-I337 USA GSM Unlocked Cellphone, 16GB, Frost White
+				</div>
+				<div class="product-price">
+					<label class="price-label"><sup>$</sup>169.95</label>
+					<img src="web/images/prime.png">
+				</div>
+			</div>
+			<div class="col-md-4 col-sm-6 col-xs-12" style="padding: 20px;">
+				<a href="">
+					<img src="web/images/cellphones_1.jpg" class="style_prevu_kit">
 				</a>
 				<div class="product-title">
 					Samsung Galaxy S4 SGH-I337 USA GSM Unlocked Cellphone, 16GB, Frost White
@@ -197,12 +236,16 @@
 		</div>
 	</div>
 
+
+
+
+
 	<div id="display-list">
 		<div class="row">
 			<div class="col-md-4 col-xs-12" >
 				<div class="view-img" style="text-align: center;">
 					<a href="">
-						<img src="web/images/cellphones_1.jpg">
+						<img src="web/images/cellphones_1.jpg" class="style_prevu_kit">
 					</a>
 				</div>
 			</div>
@@ -230,7 +273,7 @@
 			<div class="col-md-4 col-xs-12">
 				<div class="view-img" style="text-align: center;">
 					<a href="">
-						<img src="web/images/cellphones_1.jpg">
+						<img src="web/images/cellphones_1.jpg" class="style_prevu_kit">
 					</a>
 				</div>
 			</div>
@@ -258,7 +301,7 @@
 			<div class="col-md-4 col-xs-12">
 				<div class="view-img" style="text-align: center;">
 					<a href="">
-						<img src="web/images/cellphones_1.jpg">
+						<img src="web/images/cellphones_1.jpg" class="style_prevu_kit">
 					</a>
 				</div>
 			</div>
@@ -286,7 +329,7 @@
 			<div class="col-md-4 col-xs-12">
 				<div class="view-img" style="text-align: center;">
 					<a href="">
-						<img src="web/images/cellphones_1.jpg">
+						<img src="web/images/cellphones_1.jpg" class="style_prevu_kit">
 					</a>
 				</div>
 			</div>
@@ -314,7 +357,7 @@
 			<div class="col-md-4 col-xs-12">
 				<div class="view-img" style="text-align: center;">
 					<a href="">
-						<img src="web/images/cellphones_1.jpg">
+						<img src="web/images/cellphones_1.jpg" class="style_prevu_kit">
 					</a>
 				</div>
 			</div>
@@ -342,7 +385,7 @@
 			<div class="col-md-4 col-xs-12">
 				<div class="view-img" style="text-align: center;">
 					<a href="">
-						<img src="web/images/cellphones_1.jpg">
+						<img src="web/images/cellphones_1.jpg" class="style_prevu_kit">
 					</a>
 				</div>
 			</div>
