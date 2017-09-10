@@ -12,7 +12,7 @@
 	<!-- Use Email- default of magento  -->
 	<span>Share </span>
     <a href="<?php /* @escapeNotVerified */ echo $this->helper('Magento\Catalog\Helper\Product')->getEmailToFriendUrl($_product) ?>"
-     ><span class="glyphicon glyphicon-envelope" style="font-size: 20px;color: #5E5E5E;top:3px !important"></span> </a>
+     ><span class="action mailto friend"></span> </a>
        <!-- FACEBOOK -->
 	<a href="https://www.facebook.com/sharer/sharer.php?u=<?php echo urlencode($_product->getProductUrl());?>&t=<?php echo urlencode($_product->getName())?>" onclick='javascript:window.open(this.href,"","width=640,height=480,left=0,top=0,location=no,status=yes,scrollbars=yes,resizable=yes");return false' title="Share on FaceBook">
 	<span	class="fa fa-facebook-square" style="font-size: 20px ;color: #465892" ></span>

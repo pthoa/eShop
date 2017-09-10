@@ -34,7 +34,7 @@ if ($_attributeType && $_attributeType == 'text') {
 ?>
 
 <?php if ($_attributeValue): ?>
-<div class="product attribute <?php /* @escapeNotVerified */ echo $_className?>">
+<div class="product attribute <?php /* @escapeNotVerified */ echo $_className?>" style="border-top: 1px solid #ccc;border-bottom: 1px solid #ccc;padding-top: 15px;padding-bottom: 15px">
     <?php if ($_attributeLabel != 'none'): ?><strong class="type"><?php /* @escapeNotVerified */ echo $_attributeLabel?></strong><?php endif; ?>
     <div class="value" <?php /* @escapeNotVerified */ echo $_attributeAddAttribute;?>><?php /* @escapeNotVerified */ echo$_attributeValue; ?>  </div>
     <?php if($_tuanHuy): ?>

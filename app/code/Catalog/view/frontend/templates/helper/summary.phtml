@@ -20,10 +20,10 @@
          </div>
      </div>
     <?php endif;?>
-    <div class="reviews-actions tma-review-actions">
-        <a class="action view tma-review-actions" href="<?php /* @escapeNotVerified */ echo $url ?>"><span itemprop="reviewCount"><?php /* @escapeNotVerified */ echo $block->getReviewsCount() ?></span>&nbsp;<span><?php /* @escapeNotVerified */ echo($block->getReviewsCount() == 1) ? __('Review') : __('Reviews') ?></span></a>
+    <div class="reviews-actions tma-review-actions" > 
+        <a class="action view tma-review-actions" style="margin-right: 0px" href="<?php /* @escapeNotVerified */ echo $url ?>"><span itemprop="reviewCount"><?php /* @escapeNotVerified */ echo $block->getReviewsCount() ?></span>&nbsp;<span><?php /* @escapeNotVerified */ echo($block->getReviewsCount() == 1) ? __('Review') : __('Reviews') ?></span></a>
         <?php echo __('|') ?>
-        <a class="action add" href="<?php /* @escapeNotVerified */ echo $urlForm ?>">
+        <a class="action add"  href="<?php /* @escapeNotVerified */ echo $urlForm ?>">
 
         <?php /* @escapeNotVerified */ echo __('Write Your Review') ?></a>
     </div>

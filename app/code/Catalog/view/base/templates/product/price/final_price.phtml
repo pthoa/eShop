@@ -1,3 +1,31 @@
+<style type="text/css">
+    .product-info-main .product-info-price {
+    border-bottom: none;
+}
+.product-info-main .product-info-price .price-box .price-container > span:last-child {
+    float: left;
+    margin-right: 10px;
+    font-size: 26px;
+    font-weight: 700;
+}
+.product-info-main .product-info-price .old-price .price-wrapper .price {
+    text-decoration: line-through;
+    font-size: 16px;
+}
+.product-info-main .product-info-price .save-price {
+    font-size: 22px;
+    font-weight: 600;
+}
+.product-options-bottom .price-box .price-container .price, 
+.product-info-price .price-box .price-container .price{
+    font-size: 26px;
+}
+
+.product-info-main .stock.available, .product-info-main .stock.unavailable {
+     text-transform: capitalize;
+     color: #15AC38;
+}
+</style>
 <?php
 /**
  * Copyright © 2016 Magento. All rights reserved.
@@ -23,43 +51,50 @@ $finalPriceModel = $block->getPriceType('final_price');
 $idSuffix = $block->getIdSuffix() ? $block->getIdSuffix() : '';
 $schema = ($block->getZone() == 'item_view') ? true : false;
 ?>
-<?php if ($block->hasSpecialPrice()): ?>
-    <span class="special-price">
-        <?php /* @escapeNotVerified */ echo $block->renderAmount($finalPriceModel->getAmount(), [
-            'display_label'     => __('Special Price'),
-            'price_id'          => $block->getPriceId('product-price-' . $idSuffix),
-            'price_type'        => 'finalPrice',
+
+<br/>
+<div class="original-price">
+    <span style="float: left; padding-top: 13px; margin-right: 5px;">Price:</span>
+    <?php if ($block->hasSpecialPrice()): ?>
+        
+        <span class="special-price" >
+        <?php /* @escapeNotVerified */
+        echo $block->renderAmountMinimal() ?>
+    </span>
+        <span class="old-price" style="text-decoration: line-through">
+        <?php /* @escapeNotVerified */
+        echo $block->renderAmount($priceModel->getAmount(), [
+            'display_label' => '',
+            'price_id' => $block->getPriceId('old-price-' . $idSuffix),
+            'price_type' => 'oldPrice',
+            'include_container' => true,
+            'skip_adjustments' => true
+        ]); ?>
+    </span>
+    <span style="float: left; padding-top: 13px; margin-left: 25px; margin-right: 5px;">You Save:</span>
+    <span class="save-price" style="float: left; padding-top: 4px; " >
+        <?php 
+            $savePrice = $priceModel->getAmount()->getValue() - $finalPriceModel->getAmount()->getValue();
+
+            echo '$'.number_format($savePrice, 2, '.', '');
+        ?>
+    </span>
+    
+
+    <?php else: ?>
+        
+
+        <?php /* @escapeNotVerified */
+        echo $block->renderAmount($finalPriceModel->getAmount(), [
+            'price_id' => $block->getPriceId('product-price-' . $idSuffix),
+            'price_type' => 'finalPrice',
             'include_container' => true,
             'schema' => $schema
         ]); ?>
-    </span>
-    <span class="old-price">
-        <?php /* @escapeNotVerified */ echo $block->renderAmount($priceModel->getAmount(), [
-            'display_label'     => __('Regular Price'),
-            'price_id'          => $block->getPriceId('old-price-' . $idSuffix),
-            'price_type'        => 'oldPrice',
-            'include_container' => true,
-            'skip_adjustments'  => true
-        ]); ?>
-    </span>
-<?php else: ?>
-    <?php /* @escapeNotVerified */ echo $block->renderAmount($finalPriceModel->getAmount(), [
-        'price_id'          => $block->getPriceId('product-price-' . $idSuffix),
-        'price_type'        => 'finalPrice',
-        'include_container' => true,
-        'schema' => $schema
-    ]); ?>
-    <?php echo'Huyyyy'?>
-<?php endif; ?>
-
-<?php if ($block->showMinimalPrice()): ?>
-    <?php if ($block->getUseLinkForAsLowAs()):?>
-        <a href="<?php /* @escapeNotVerified */ echo $block->getSaleableItem()->getProductUrl(); ?>" class="minimal-price-link">
-            <?php /* @escapeNotVerified */ echo $block->renderAmountMinimal(); ?>
-        </a>
-    <?php else:?>
-        <span class="minimal-price-link">
-            <?php /* @escapeNotVerified */ echo $block->renderAmountMinimal(); ?>
-        </span>
-    <?php endif?>
-<?php endif; ?>
+        <!-- <?php 
+            $final = $priceModel->getAmount();
+            $final1 = $final->__toString();
+            echo $final1 - 4;
+         ?> -->
+    <?php endif; ?>
+</div>
